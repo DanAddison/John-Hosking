@@ -1,0 +1,83 @@
+.sidenav {
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 250px;
+  padding: $spacing*2 1em $spacing $spacing;
+  position: fixed;
+  top:0;
+  left: 0;
+  height:100%;
+  background-color: $color__canvas-medium;
+  margin-left: -250px;
+  transition: .3s ease-in;
+
+  @include mq($bp-menu) {
+    margin-left: 0;
+  }
+
+  &.menushow {
+    margin-left: 0;
+
+    // .menu-button {
+    //   transition: all .6s ease-in;
+    // }
+
+  }
+}
+
+.sidenav nav {
+  
+  ul {
+    list-style: none;
+    margin-top: 3em;
+    padding: 0;
+  }
+  
+  li {
+    padding: .1em 0em;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+}
+
+.menu-button {
+  position: fixed;
+  top: 32px;
+  left: 32px;
+  font-size: 1.5em;
+  color: $black;
+  
+  @include mq($bp-menu) {
+    display: none;
+  }
+  
+  .arrow {
+    display: none;
+  }
+  
+  &.active {
+    
+    .burger {
+      display: none;
+    }
+
+    .arrow {
+      display: block;
+      margin-top: 0.1em;
+      font-size: 1.1em;
+    }
+  }
+}
+
+// copyright and website by
+.credits {
+  font-size: .9em;
+
+  a {
+    text-decoration: underline;
+  }
+}

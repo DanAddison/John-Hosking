@@ -29,16 +29,11 @@
 
     <div class="page">
 
-      <div class="wrapper">
-
       <!-- You write this content block in pages files -->
       {% block content %} {% endblock %}
 
-      </div><!-- .wrapper -->
-
     </div><!-- #page -->
 
-    {% include "partials/footer.njk" %}
 
     <!-- the following comment thing is essential for gulp to uglify and put js into the dist folder: -->
     <!--build:js js/main.min.js -->
@@ -50,9 +45,8 @@
       $(document).ready(function(){
         $(".menu-button").click(function(event){
           event.preventDefault();
-          $("nav").toggleClass("menushow");
-          
-          
+          $(".sidenav").toggleClass("menushow");
+          $(".menu-button").toggleClass("active");     
         });
       });
 

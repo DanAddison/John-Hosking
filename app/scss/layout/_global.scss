@@ -1,5 +1,11 @@
 .page {
-  min-height: calc(100vh - 180px);
+  min-height: 100vh;
+  margin-left: 0;
+  margin-top: $spacing*3;
+
+  @include mq($bp-menu) {
+    margin-left: 250px;
+  }
 }
 
 /* center elements on page */

@@ -25,29 +25,34 @@
 
   <body id="contact">
 
-    <header class="site-header"> 
+    <header class="sidenav"> 
 
+  <div class="menu-button">
+    <i class="burger fas fa-bars"></i>
+    <i class="arrow fas fa-arrow-left"></i>
+  </div>
 
-    <nav class="main-nav">
-      <div class="menu-button">
-        <i class="fas fa-bars"></i>
-      </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Painting</a></li>
+      <li><a href="printmaking.html">Printmaking</a></li>
+      <li><a href="biography.html">Biography</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-      <ul>
-        <li><a href="index.html">Painting</a></li>
-        <li><a href="portfolio.html">Printmaking</a></li>
-        <li><a href="bio.html">Biography</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+  <div class="credits">
 
-      
-    </nav>
+    <p class="copyright">&copy; 2018 John Hosking</a></p>
+    <p class="website">Website by <a href="https://www.danaddison.co.uk">Dan Addison</a></p>
+
+  </div><!-- .credits -->
+
+  
 
 </header>
 
     <div class="page">
-
-      <div class="wrapper">
 
       <!-- You write this content block in pages files -->
       
@@ -82,14 +87,8 @@
 
 
 
-      </div><!-- .wrapper -->
-
     </div><!-- #page -->
 
-    <footer class="site-footer">
-
-
-</footer>
 
     <!-- the following comment thing is essential for gulp to uglify and put js into the dist folder: -->
     <!--build:js js/main.min.js -->
@@ -101,9 +100,8 @@
       $(document).ready(function(){
         $(".menu-button").click(function(event){
           event.preventDefault();
-          $("nav").toggleClass("menushow");
-          
-          
+          $(".sidenav").toggleClass("menushow");
+          $(".menu-button").toggleClass("active");     
         });
       });
 

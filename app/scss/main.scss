@@ -18,20 +18,18 @@
 // ## LAYOUT
 // *********************************************************/
 @import 'layout/global';
-@import 'layout/site-header';
-@import 'layout/site-footer';
+@import 'layout/sidenav';
 
 // /*********************************************************
 // ## PAGES
 // *********************************************************/
-@import 'pages/home';
+@import 'pages/painting';
 @import 'pages/contact';
 
 // /*********************************************************
 // ## COMPONENTS
 // *********************************************************/
 @import 'components/site-branding';
-@import 'components/main-nav';
 @import 'components/contact-form';
 @import 'components/gallery';
 @import 'components/social-icons';

@@ -7,7 +7,7 @@ $bp-m: 700px;
 $bp-l: 1000px;
 $bp-xl: 1300px;
 
-$bp-menu: 600px;
+$bp-menu: 900px;
 
 $max-width: $bp-xl;
 
@@ -31,11 +31,11 @@ $font__pre: Courier, monospace;
 $white: #fff;
 $black: #222;
 $primary: #66d4b3;
-$secondary: #ffae00;
+$secondary: #704d02;
 
 // Backgrounds
 $color__canvas-light: $white;
-$color__canvas-medium: #c4c2c2;
+$color__canvas-medium: #e2e2e2;
 $color__canvas-dark: $black;
 $color__header: $primary;
 $color__footer: $primary;
@@ -46,7 +46,7 @@ $color__body-light: #474747;
 $color__headings: $black;
 
 // Links
-$color__action: $secondary;
+$color__action: $black;
 
 // Buttons
 $color__button-text: $color__body;
