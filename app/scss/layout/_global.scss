@@ -1,10 +1,10 @@
 .page {
   min-height: 100vh;
+  padding-top: $spacing*2;
   margin-left: 0;
-  margin-top: $spacing*3;
 
   @include mq($bp-menu) {
-    margin-left: 250px;
+    margin-left: 320px;
   }
 }
 

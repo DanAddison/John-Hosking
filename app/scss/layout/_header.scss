@@ -1,0 +1,48 @@
+.site-header {
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  background-color: $white;
+
+  @include mq($bp-menu) {
+    display: none;
+  }
+
+  .row {
+    padding: $spacing/2 $spacing;
+  }
+}
+
+.site-branding {
+  margin-bottom: 0;
+  font-size: 2em;
+}
+
+.menu-button {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  font-size: 1.5em;
+  color: $black;
+  
+  @include mq($bp-menu) {
+    display: none;
+  }
+  
+  .arrow {
+    display: none;
+  }
+  
+  &.active {
+    
+    .burger {
+      display: none;
+    }
+
+    .arrow {
+      display: block;
+      margin-top: 0.1em;
+      font-size: 1.1em;
+    }
+  }
+}

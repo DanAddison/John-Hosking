@@ -18,6 +18,7 @@
 // ## LAYOUT
 // *********************************************************/
 @import 'layout/global';
+@import 'layout/header';
 @import 'layout/sidenav';
 
 // /*********************************************************
@@ -29,7 +30,6 @@
 // /*********************************************************
 // ## COMPONENTS
 // *********************************************************/
-@import 'components/site-branding';
 @import 'components/contact-form';
 @import 'components/gallery';
 @import 'components/social-icons';

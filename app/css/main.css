@@ -699,14 +699,14 @@ body {
   font-size: 1em;
   line-height: 1.5;
   font-weight: 400;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
   color: #222; }
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-  font-family: "VT323", monospace;
+  font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
   margin-top: 0;
   margin-bottom: 1em; }
 
@@ -729,7 +729,7 @@ h6 {
   font-size: 1em; }
 
 /* Larger than phablet */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
   h1 {
     font-size: 3.25em; }
   h2 {
@@ -1038,11 +1038,11 @@ hr {
 
 .page {
   min-height: 100vh;
-  margin-left: 0;
-  margin-top: 6em; }
+  padding-top: 4em;
+  margin-left: 0; }
   @media screen and (min-width: 900px) {
     .page {
-      margin-left: 250px; } }
+      margin-left: 320px; } }
 
 /* center elements on page */
 .wrapper {
@@ -1053,41 +1053,25 @@ hr {
 .hidden {
   display: none; }
 
-.sidenav {
-  z-index: 100;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 250px;
-  padding: 4em 1em 2em 2em;
+.site-header {
+  z-index: 10;
   position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background-color: #e2e2e2;
-  margin-left: -250px;
-  transition: .3s ease-in; }
+  width: 100%;
+  background-color: #fff; }
   @media screen and (min-width: 900px) {
-    .sidenav {
-      margin-left: 0; } }
-  .sidenav.menushow {
-    margin-left: 0; }
+    .site-header {
+      display: none; } }
+  .site-header .row {
+    padding: 1em 2em; }
 
-.sidenav nav ul {
-  list-style: none;
-  margin-top: 3em;
-  padding: 0; }
-
-.sidenav nav li {
-  padding: .1em 0em; }
-
-.sidenav nav a {
-  text-decoration: none; }
+.site-branding {
+  margin-bottom: 0;
+  font-size: 2em; }
 
 .menu-button {
   position: fixed;
-  top: 32px;
-  left: 32px;
+  top: 24px;
+  right: 24px;
   font-size: 1.5em;
   color: #222; }
   @media screen and (min-width: 900px) {
@@ -1101,6 +1085,37 @@ hr {
     display: block;
     margin-top: 0.1em;
     font-size: 1.1em; }
+
+.sidenav {
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 320px;
+  padding: 1em 1em 2em 2em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #e2e2e2;
+  margin-left: -320px;
+  transition: .3s ease-in; }
+  @media screen and (min-width: 900px) {
+    .sidenav {
+      margin-left: 0; } }
+  .sidenav.menushow {
+    margin-left: 0; }
+
+.sidenav nav ul {
+  list-style: none;
+  margin-top: 2em;
+  padding: 0; }
+
+.sidenav nav li {
+  padding: .1em 0em; }
+
+.sidenav nav a {
+  text-decoration: none; }
 
 .credits {
   font-size: .9em; }
@@ -1126,15 +1141,6 @@ hr {
       .contact .portrait {
         width: 50%;
         padding: 2rem 1rem 3rem; } }
-
-.site-branding {
-  text-align: center; }
-  .site-branding a {
-    text-decoration: none; }
-  .site-branding h1 {
-    font-family: "VT323", monospace;
-    font-size: 2rem;
-    margin: 0; }
 
 .contact-form {
   float: left;

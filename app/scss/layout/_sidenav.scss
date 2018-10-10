@@ -1,16 +1,16 @@
 .sidenav {
-  z-index: 100;
+  z-index: 20;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 250px;
-  padding: $spacing*2 1em $spacing $spacing;
+  width: 320px;
+  padding: 1em 1em $spacing $spacing;
   position: fixed;
   top:0;
   left: 0;
   height:100%;
   background-color: $color__canvas-medium;
-  margin-left: -250px;
+  margin-left: -320px;
   transition: .3s ease-in;
 
   @include mq($bp-menu) {
@@ -19,11 +19,6 @@
 
   &.menushow {
     margin-left: 0;
-
-    // .menu-button {
-    //   transition: all .6s ease-in;
-    // }
-
   }
 }
 
@@ -31,7 +26,7 @@
   
   ul {
     list-style: none;
-    margin-top: 3em;
+    margin-top: 2em;
     padding: 0;
   }
   
@@ -41,35 +36,6 @@
   
   a {
     text-decoration: none;
-  }
-}
-
-.menu-button {
-  position: fixed;
-  top: 32px;
-  left: 32px;
-  font-size: 1.5em;
-  color: $black;
-  
-  @include mq($bp-menu) {
-    display: none;
-  }
-  
-  .arrow {
-    display: none;
-  }
-  
-  &.active {
-    
-    .burger {
-      display: none;
-    }
-
-    .arrow {
-      display: block;
-      margin-top: 0.1em;
-      font-size: 1.1em;
-    }
   }
 }
 
