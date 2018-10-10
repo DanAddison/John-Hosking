@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>John Hosking</title>
+    <meta name="description" content="my static site template">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <!-- essential comment for gulp to minify and put css into dist folder: -->
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--endbuild-->
+
+    
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> 
+
+    
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+  </head>
+
+  <body id="contact">
+
+    <header class="site-header"> 
+
+
+    <nav class="main-nav">
+      <div class="menu-button">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <ul>
+        <li><a href="index.html">Painting</a></li>
+        <li><a href="portfolio.html">Printmaking</a></li>
+        <li><a href="bio.html">Biography</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      
+    </nav>
+
+</header>
+
+    <div class="page">
+
+      <div class="wrapper">
+
+      <!-- You write this content block in pages files -->
+      
+
+  <div class="contact">
+
+    <div class="estate">
+      <img src="images/KefAvatarSquare.jpg" alt="">
+      <p>John's family are happy to hear from you if you have any enquiries about his work. Please complete the form.</p>
+    </div>
+
+    <form class="contact-form" name="contact" method="POST" netlify-honeypot="bot-field" netlify>
+      <p class="hidden">
+        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+      </p>
+      <p>
+        <label>Your Name: <input type="text" name="name" required/></label>   
+      </p>
+      <p>
+        <label>Your Email: <input type="email" name="email" required/></label>
+      </p>
+      <p>
+        <label>Message: <textarea name="message" rows="10" required></textarea></label>
+      </p>
+      <div data-netlify-recaptcha></div>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
+
+  </div>
+
+
+
+      </div><!-- .wrapper -->
+
+    </div><!-- #page -->
+
+    <footer class="site-footer">
+
+
+</footer>
+
+    <!-- the following comment thing is essential for gulp to uglify and put js into the dist folder: -->
+    <!--build:js js/main.min.js -->
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+
+    <script>
+
+      $(document).ready(function(){
+        $(".menu-button").click(function(event){
+          event.preventDefault();
+          $("nav").toggleClass("menushow");
+          
+          
+        });
+      });
+
+      $("[data-fancybox]").fancybox({
+        slideShow : false,
+        thumbs : false,
+        loop : true,
+        infobar : true,
+
+      });
+    </script>
+    <!-- endbuild -->
+
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>John Hosking</title>
+    <meta name="description" content="my static site template">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <!-- essential comment for gulp to minify and put css into dist folder: -->
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--endbuild-->
+
+    {# get the google fonts #}
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+
+    {# get the icon font #}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> 
+
+    {# favicon #}
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+  </head>
+
+  <body id="{{ body_id }}">
+
+    {% include "partials/header.njk" %}
+
+    <div class="page">
+
+      <div class="wrapper">
+
+      <!-- You write this content block in pages files -->
+      {% block content %} {% endblock %}
+
+      </div><!-- .wrapper -->
+
+    </div><!-- #page -->
+
+    {% include "partials/footer.njk" %}
+
+    <!-- the following comment thing is essential for gulp to uglify and put js into the dist folder: -->
+    <!--build:js js/main.min.js -->
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+
+    <script>
+
+      $(document).ready(function(){
+        $(".menu-button").click(function(event){
+          event.preventDefault();
+          $("nav").toggleClass("menushow");
+          
+          
+        });
+      });
+
+      $("[data-fancybox]").fancybox({
+        slideShow : false,
+        thumbs : false,
+        loop : true,
+        infobar : true,
+
+      });
+    </script>
+    <!-- endbuild -->
+
+  </body>
+</html>

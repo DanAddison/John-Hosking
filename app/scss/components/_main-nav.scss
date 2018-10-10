@@ -1,0 +1,59 @@
+
+.main-nav {
+  width: 200px;
+  padding: 20px 1em;
+  position: fixed;
+  top:0;
+  right: 0;
+  height:100%;
+  background-color: $color__canvas-dark;
+  margin-right: -200px;
+  transition: .3s ease-in;
+
+  &.menushow {
+    margin: 0;
+
+    .fa-bars {
+      color: $white !important;
+      transition: .6s ease-in;
+    }
+
+  }
+
+  ul {
+    list-style: none;
+    margin-top: 3em;
+    padding: 0;
+  }
+  
+  li {
+    padding: .25em;
+  }
+  
+  a {
+    color: $white;
+    font-size: 1.25em;
+    text-decoration: none;
+  }
+}
+
+.menu-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.fa-bars {
+  font-size: 1.5em;
+  color: $color__body;
+  transition: .6s ease-in;
+}
+
+.social-icons {
+  font-size: 1.25em;
+
+  a {
+
+    padding: 0 .25em;
+  }
+}
