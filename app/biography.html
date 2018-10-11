@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>John Hosking</title>
+    <meta name="description" content="my static site template">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <!-- essential comment for gulp to minify and put css into dist folder: -->
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--endbuild-->
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> 
+
+    
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+  </head>
+
+  <body id="biography">
+
+    <div class="sidenav"> 
+
+  <nav>
+    <h1 class="site-branding">John Hosking</h1>
+    <ul>
+      <li><a href="index.html">Painting</a></li>
+      <li><a href="printmaking.html">Printmaking</a></li>
+      <li><a href="biography.html">Biography</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="credits">
+
+    <p class="copyright">&copy; 2018 John Hosking</a></p>
+    <p class="website">Website by <a href="https://www.danaddison.co.uk">Dan Addison</a></p>
+
+  </div><!-- .credits -->
+
+  
+
+</div>
+
+    <header class="site-header"> 
+
+  <div class="row">
+    <h1 class="site-branding">John Hosking</h1>
+
+    <div class="menu-button">
+      <i class="burger fas fa-bars"></i>
+      <i class="arrow fas fa-arrow-left"></i>
+    </div>
+    
+  </div>
+
+</header>
+    
+    <div class="page">
+
+
+      <!-- You write this content block in pages files -->
+      
+
+  <div class="biography">
+
+    <div class="row row--pad">
+
+      <div class="intro">
+        <p>John Hosking was born in 1952 and studied one year Foundation, three years Fine Art at Epsom School of Art and Design and three years P/T MA Fine Art at Canterbury KIAD.</p>
+        <p>John's work is in public and private collections including the Metropole Arts Centre Permanent Collection, Hampshire County Council, The Department of the Enviroment and Imperial  College, London.</p>
+        <p>The following is a list of One Man Shows and Exhibitions which have featured his work over the years.</p>
+      </div>
+
+    </div><!-- .row .row--pad-->
+
+    <div class="row row--pad">
+
+      <div class="row">
+        <p class="year">1975</p>
+        <ul class="items">
+          <li>Camden Art Centre "New Contemporaries"</li>
+          <li>Royal Academy "Summer Exhibition"</li>
+        </ul>
+      </div>
+      <div class="row">
+        <p class="year">1976</p>
+        <ul class="items">
+          <li>Royal Overseas League Exhibition, London</li>
+        </ul>
+      </div>
+      <div class="row">
+        <p class="year">1977</p>
+        <ul class="items">
+          <li>London and Surrey Arts "Town and Country Exhibition", Kingston upon Thames</li>
+          <li>Royal Overseas League Exhibition, London</li>
+        </ul>
+      </div>
+      <div class="row">
+        <p class="year">1978</p>
+        <ul class="items">
+          <li>Folkestone, New Metropole: Summer Exhibition</li>
+        </ul>
+      </div>
+      <div class="row">
+        <p class="year">1979</p>
+        <ul class="items">
+          <li>"Kent Artists' Exhibition", Springfield, Maidstone</li>
+          <li>Runner-up Prize Winner "Saunders Watercolour Exhibition", Mall Galleries, London</li>
+          <li>One person exhibition, Margate Library</li>
+        </ul>
+      </div>
+
+    </div><!-- .row .row--pad-->
+
+  </div><!-- .biography -->
+
+
+
+    </div><!-- #page -->
+
+
+    <!-- the following comment thing is essential for gulp to uglify and put js into the dist folder: -->
+    <!--build:js js/main.min.js -->
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+
+    <script>
+
+      $(document).ready(function(){
+        $(".menu-button").click(function(event){
+          event.preventDefault();
+          $(".sidenav").toggleClass("menushow");
+          $(".menu-button").toggleClass("active");     
+        });
+      });
+
+      $("[data-fancybox]").fancybox({
+        slideShow : false,
+        thumbs : false,
+        loop : true,
+        infobar : true,
+
+      });
+    </script>
+    <!-- endbuild -->
+
+  </body>
+</html>
