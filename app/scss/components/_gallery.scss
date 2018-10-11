@@ -1,31 +1,27 @@
+.painting,
+.printmaking {
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 4.5rem;
-}
+  figure {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    margin-bottom: $spacing;
 
-.thumb {
-  margin: .5rem;
-  width: calc(50% - 1rem);
-
-  @include mq($bp-l) {
-      width: calc(33.3333% - 1rem);
+    figcaption {
+      display: none;
     }
-
-  .responsive-image {
-    max-width: 100%;
   }
+  
+  img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s ease;
 
-  h3 {
-    margin-top: 10px;
-    margin-bottom: 0;
-    padding: 0 3px;
-  }
-
-  p {
-    margin-top: 5px;
-    padding: 0 3px;
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
   }
 }
-// test and again

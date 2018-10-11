@@ -22,28 +22,29 @@
 	margin-right: auto;
 	max-width: $max-width;
 		
-	@include mq($bp-s) { 
+	// @include mq($bp-s)
 		@include grid-columns(4); 	// Four column grid
-	}
-	
+	// }
+
 	@include mq($bp-m) { 
 		@include grid-columns(6);	// Six column grid
 	}
 	
-	@include mq($bp-l) { 
-		@include grid-columns(8);	// Eight column grid
-	}
+	// @include mq($bp-l) { 
+	// 	@include grid-columns(8);	// Eight column grid
+	// }
 	
-	@include mq($bp-l) { 
+	// @include mq($bp-l) { 
 	
-		.span8-third {
-			width: 33.333333%;
-		}
-	}
+	// 	.span8-third {
+	// 		width: 33.333333%;
+	// 	}
+	// }
 
-	@include mq($bp-xl) { 
-		@include grid-columns(12);	// Twelve column grid
-	}
+	// @include mq($bp-xl) { 
+	// 	@include grid-columns(12);	// Twelve column grid
+	// }
+
 }
 
 .row__colspaced {

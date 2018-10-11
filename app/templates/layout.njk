@@ -55,10 +55,13 @@
 
       $("[data-fancybox]").fancybox({
         slideShow : false,
-        thumbs : false,
         loop : true,
         infobar : true,
+        protect : true,
 
+        caption : function( instance, item ) {
+          return $(this).find('figcaption').html();
+        }
       });
     </script>
     <!-- endbuild -->

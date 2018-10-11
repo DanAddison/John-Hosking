@@ -68,32 +68,53 @@
       <!-- You write this content block in pages files -->
       
 
-  <div class="row row--pad">
+  <div class="painting">
 
-    <div class="intro">
+    <div class="row row--pad">
 
-      <p>Hi, I'm Dan, a freelance web developer from Folkestone <i class="fas fa-battery-full"></i></p>
-      <p>Take a look at some <a href="" class="link__portfolio">examples</a> of sites I've built <i class="fas fa-battery-three-quarters"></i></p>
-      <p>Jump to my <a href="" class="link__bio">bio</a> for the riveting back-story <i class="fas fa-battery-half"></i></p>
-      <p>Why not <a href="" class="link__contact">contact</a> me to chat about your project idea? <i class="fas fa-battery-quarter"></i></p>
-      <p>Download my <a href="" class="link__cv">CV</a> if that helps <i class="fas fa-battery-empty"></i></p>
-      <p>Sequi tenetur odio. Aut nihil officia. Veniam ab reiciendis veritatis officiis ea mollitia iste tempora. Nihil blanditiis sit. Tempore quae non ut vitae officia libero.</p>
-      
-      <p>Accusamus in accusamus necessitatibus et. Aut in quis autem iste omnis quidem. Pariatur est mollitia voluptatibus pariatur eligendi.</p>
-      
-      <p>Labore quis eum aut sed illum. Illum doloribus qui quisquam debitis necessitatibus asperiores. Quis officiis corrupti ducimus quam dolor et.</p>
+      <div class="row__colspaced">
 
-      <p>Accusamus in accusamus necessitatibus et. Aut in quis autem iste omnis quidem. Pariatur est mollitia voluptatibus pariatur eligendi.</p>
-      
-      <p>Labore quis eum aut sed illum. Illum doloribus qui quisquam debitis necessitatibus asperiores. Quis officiis corrupti ducimus quam dolor et.</p>
+        <div class="span4-2 span6-2">
+          <figure>
+            <a data-fancybox="gallery" href="images/dummy/Reps75.jpg"><img src="images/dummyThumbs/MiniReps75.jpg" alt="Reps"><figcaption><p class="figure__title">Reps</p><p class="figure__info">2007 Oil on canvas</p></figcaption></a>
+          </figure>
+        </div>
+        <div class="span4-2 span6-2">
+          <figure>
+            <a data-fancybox="gallery" href="images/dummy/Reps83.jpg"><img src="images/dummyThumbs/MiniReps83.jpg" alt="Reps"><figcaption><p class="figure__title">Reps [detail]</p><p class="figure__info">2007 Oil on canvas</p></figcaption></a>
+          </figure>
+        </div>
+        <div class="span4-2 span6-2">
+          <figure>
+            <a data-fancybox="gallery" href="images/dummy/Reps84.jpg"><img src="images/dummyThumbs/MiniReps84.jpg" alt="Reps"><figcaption><p class="figure__title">Reps Again [detail]</p><p class="figure__info">2008 Oil on canvas</p></figcaption></a>
+          </figure>
+        </div>
+        <div class="span4-2 span6-2">
+          <figure>
+            <a data-fancybox="gallery" href="images/dummy/Reps91.jpg"><img src="images/dummyThumbs/MiniReps91.jpg" alt="Reps"><figcaption><p class="figure__title">Reps [detail]</p><p class="figure__info">2010 Acrylic on canvas</p></figcaption></a>
+          </figure>
+        </div>
+        <div class="span4-2 span6-2">
+          <figure>
+            <a data-fancybox="gallery" href="images/dummy/Reps93.jpg"><img src="images/dummyThumbs/MiniReps93.jpg" alt="Reps"><figcaption><p class="figure__title">Reps [detail]</p><p class="figure__info">2007 Oil on canvas</p></figcaption></a>
+          </figure>
+        </div>
+        <div class="span4-2 span6-2">
+          <figure>
+            <a data-fancybox="gallery" href="images/dummy/Reps95.jpg"><img src="images/dummyThumbs/MiniReps95.jpg" alt="Reps"><figcaption><p class="figure__title">Reps [detail]</p><p class="figure__info">2007 Oil on canvas</p></figcaption></a>
+          </figure>
+        </div>
+        <div class="span4-2 span6-2">
+          <figure>
+            <a data-fancybox="gallery" href="images/dummy/Reps97.jpg"><img src="images/dummyThumbs/MiniReps97.jpg" alt="Reps"><figcaption><p class="figure__title">Reps [detail]</p><p class="figure__info">2007 Oil on canvas</p></figcaption></a>
+          </figure>
+        </div>
 
-      <p>Accusamus in accusamus necessitatibus et. Aut in quis autem iste omnis quidem. Pariatur est mollitia voluptatibus pariatur eligendi.</p>
-      
-      <p>Labore quis eum aut sed illum. Illum doloribus qui quisquam debitis necessitatibus asperiores. Quis officiis corrupti ducimus quam dolor et.</p>
+      </div><!-- .row__coltouching -->
 
-    </div>
+    </div><!-- .row .row--pad -->
 
-  </div>
+  </div><!-- .painting -->
 
 
 
@@ -117,10 +138,13 @@
 
       $("[data-fancybox]").fancybox({
         slideShow : false,
-        thumbs : false,
         loop : true,
         infobar : true,
+        protect : true,
 
+        caption : function( instance, item ) {
+          return $(this).find('figcaption').html();
+        }
       });
     </script>
     <!-- endbuild -->
