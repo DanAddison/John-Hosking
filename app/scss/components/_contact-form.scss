@@ -2,7 +2,7 @@
   float: left;
   text-align: left;
   width: 100%;
-  padding: 1rem;
+  max-width: $bp-m;
 
   input,
   select,
@@ -18,9 +18,5 @@
     &:focus {
       background-color: $color__action;
     }
-  }
-
-  @include mq($bp-m) {
-    width: 50%;
   }
 }
