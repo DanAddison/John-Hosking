@@ -3,7 +3,7 @@
   // position: fixed;
   width: 100%;
   // background-color: $white;
-  background-color: $primary;
+  background-color: $color__canvas-medium;
 
   @include mq($bp-menu) {
     display: none;
@@ -17,6 +17,10 @@
 .site-branding {
   margin-bottom: 0;
   font-size: 2em;
+
+  a {
+    color: $color__body;
+  }
 }
 
 .menu-button {

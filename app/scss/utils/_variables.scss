@@ -30,12 +30,12 @@ $font__pre: Courier, monospace;
 
 $white: #fff;
 $black: #222;
-$primary: #66d4b3;
-$secondary: #ffffff;
+$primary: #02aa78;
+$secondary: #aa8302;
 
 // Backgrounds
 $color__canvas-light: $white;
-$color__canvas-medium: $primary;
+$color__canvas-medium: #dff3ed;
 $color__canvas-dark: $black;
 $color__header: $primary;
 $color__footer: $primary;
@@ -46,7 +46,7 @@ $color__body-light: #474747;
 $color__headings: $black;
 
 // Links
-$color__action: $secondary;
+$color__action: $primary;
 
 // Buttons
 $color__button-text: $color__body;

@@ -1,6 +1,5 @@
 .page {
   min-height: 100vh;
-  padding: $spacing*2 0;
   margin-left: 0;
 
   @include mq($bp-menu) {

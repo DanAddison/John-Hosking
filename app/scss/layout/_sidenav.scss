@@ -40,7 +40,7 @@
 
     &:hover,
     &:focus {
-     color: $color__action;
+     text-decoration: underline;
     }
   }
 }
@@ -50,12 +50,12 @@
   font-size: .9em;
 
   a {
-    color: $color__body;
-    text-decoration: underline;
+    color: $color__action;
+    text-decoration: none;
 
     &:hover,
     &:focus {
-      color: $color__action;
+      text-decoration: underline;
     }
   }
 }

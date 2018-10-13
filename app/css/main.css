@@ -601,7 +601,7 @@ p {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
   text-decoration: none;
-  color: #ffffff; }
+  color: #02aa78; }
   a:hover, a:focus, a:active {
     text-decoration: underline; }
   a:focus {
@@ -885,7 +885,6 @@ iframe {
 
 .page {
   min-height: 100vh;
-  padding: 4em 0;
   margin-left: 0; }
   @media screen and (min-width: 900px) {
     .page {
@@ -903,7 +902,7 @@ iframe {
 .site-header {
   z-index: 10;
   width: 100%;
-  background-color: #66d4b3; }
+  background-color: #dff3ed; }
   @media screen and (min-width: 900px) {
     .site-header {
       display: none; } }
@@ -913,6 +912,8 @@ iframe {
 .site-branding {
   margin-bottom: 0;
   font-size: 2em; }
+  .site-branding a {
+    color: #222; }
 
 .menu-button {
   position: absolute;
@@ -943,7 +944,7 @@ iframe {
   top: 0;
   left: 0;
   height: 100%;
-  background-color: #66d4b3;
+  background-color: #dff3ed;
   margin-left: -300px;
   transition: .3s ease-in; }
   @media screen and (min-width: 900px) {
@@ -964,15 +965,15 @@ iframe {
   color: #222;
   text-decoration: none; }
   .sidenav nav a:hover, .sidenav nav a:focus {
-    color: #ffffff; }
+    text-decoration: underline; }
 
 .credits {
   font-size: .9em; }
   .credits a {
-    color: #222;
-    text-decoration: underline; }
+    color: #02aa78;
+    text-decoration: none; }
     .credits a:hover, .credits a:focus {
-      color: #ffffff; }
+      text-decoration: underline; }
 
 @media screen and (min-width: 900px) {
   .biography {
@@ -1015,7 +1016,7 @@ iframe {
   .contact-form button {
     padding: .25rem 1rem; }
     .contact-form button:hover, .contact-form button:focus {
-      background-color: #ffffff; }
+      background-color: #02aa78; }
 
 .painting figure,
 .printmaking figure {
