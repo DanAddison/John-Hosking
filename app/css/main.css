@@ -1017,9 +1017,29 @@ iframe {
   width: 100%;
   padding-bottom: 100%;
   margin-bottom: 2em; }
+  .painting figure .image__info,
+  .printmaking figure .image__info {
+    display: none; }
   .painting figure figcaption,
   .printmaking figure figcaption {
-    display: none; }
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 10;
+    opacity: 0;
+    transition: .4s ease-out; }
+    .painting figure figcaption:hover, .painting figure figcaption:focus,
+    .printmaking figure figcaption:hover,
+    .printmaking figure figcaption:focus {
+      opacity: 1; }
+
+.painting figure:hover figcaption,
+.printmaking figure:hover figcaption {
+  opacity: 1; }
 
 .painting img,
 .printmaking img {
@@ -1027,11 +1047,15 @@ iframe {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  transition: .2s ease; }
+  transition: .2s ease-out; }
   .painting img:hover, .painting img:focus,
   .printmaking img:hover,
   .printmaking img:focus {
-    transform: scale(1.1); }
+    filter: brightness(40%); }
+
+.painting figcaption:hover ~ img,
+.printmaking figcaption:hover ~ img {
+  filter: brightness(40%); }
 
 .social-icons i {
   padding: .5em;
