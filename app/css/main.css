@@ -548,14 +548,15 @@ body {
   font-size: 1em;
   line-height: 1.5;
   font-weight: 400;
-  font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
+  font-family: "Raleway", sans-serif, Helvetica, Arial, sans-serif;
   color: #222; }
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-  font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
+  font-family: "Raleway", sans-serif, Helvetica, Arial, sans-serif;
+  font-weight: 600;
   margin-top: 0;
   margin-bottom: 1em; }
 
@@ -600,7 +601,7 @@ p {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
   text-decoration: none;
-  color: #d89400; }
+  color: #ffffff; }
   a:hover, a:focus, a:active {
     text-decoration: underline; }
   a:focus {
@@ -884,11 +885,11 @@ iframe {
 
 .page {
   min-height: 100vh;
-  padding-top: 4em;
+  padding: 4em 0;
   margin-left: 0; }
   @media screen and (min-width: 900px) {
     .page {
-      margin-left: 320px; } }
+      margin-left: 300px; } }
 
 /* center elements on page */
 .wrapper {
@@ -901,9 +902,8 @@ iframe {
 
 .site-header {
   z-index: 10;
-  position: fixed;
   width: 100%;
-  background-color: #fff; }
+  background-color: #66d4b3; }
   @media screen and (min-width: 900px) {
     .site-header {
       display: none; } }
@@ -915,7 +915,7 @@ iframe {
   font-size: 2em; }
 
 .menu-button {
-  position: fixed;
+  position: absolute;
   top: 24px;
   right: 24px;
   font-size: 1.5em;
@@ -937,14 +937,14 @@ iframe {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 320px;
+  width: 300px;
   padding: 1em 1em 2em 2em;
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
-  background-color: #e2e2e2;
-  margin-left: -320px;
+  background-color: #66d4b3;
+  margin-left: -300px;
   transition: .3s ease-in; }
   @media screen and (min-width: 900px) {
     .sidenav {
@@ -961,12 +961,18 @@ iframe {
   padding: .1em 0em; }
 
 .sidenav nav a {
+  color: #222;
   text-decoration: none; }
+  .sidenav nav a:hover, .sidenav nav a:focus {
+    color: #ffffff; }
 
 .credits {
   font-size: .9em; }
   .credits a {
+    color: #222;
     text-decoration: underline; }
+    .credits a:hover, .credits a:focus {
+      color: #ffffff; }
 
 @media screen and (min-width: 900px) {
   .biography {
@@ -1009,14 +1015,14 @@ iframe {
   .contact-form button {
     padding: .25rem 1rem; }
     .contact-form button:hover, .contact-form button:focus {
-      background-color: #d89400; }
+      background-color: #ffffff; }
 
 .painting figure,
 .printmaking figure {
   position: relative;
   width: 100%;
   padding-bottom: 100%;
-  margin-bottom: 2em; }
+  margin-bottom: 0; }
   .painting figure .image__info,
   .printmaking figure .image__info {
     display: none; }

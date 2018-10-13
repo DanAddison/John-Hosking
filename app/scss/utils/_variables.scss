@@ -19,8 +19,8 @@ $spacing-percent: 3%;		// Used by grid system
     Fonts
 \*------------------------------------*/
 
-$font__body: 'Roboto', sans-serif;
-$font__headings: 'Roboto', sans-serif;
+$font__body: 'Raleway', sans-serif;
+$font__headings: 'Raleway', sans-serif;
 $font__code: Monaco, Consolas, monospace;
 $font__pre: Courier, monospace;
 
@@ -31,11 +31,11 @@ $font__pre: Courier, monospace;
 $white: #fff;
 $black: #222;
 $primary: #66d4b3;
-$secondary: #d89400;
+$secondary: #ffffff;
 
 // Backgrounds
 $color__canvas-light: $white;
-$color__canvas-medium: #e2e2e2;
+$color__canvas-medium: $primary;
 $color__canvas-dark: $black;
 $color__header: $primary;
 $color__footer: $primary;

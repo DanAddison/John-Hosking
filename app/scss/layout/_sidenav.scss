@@ -3,14 +3,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 320px;
+  width: 300px;
   padding: 1em 1em $spacing $spacing;
   position: fixed;
   top:0;
   left: 0;
   height:100%;
   background-color: $color__canvas-medium;
-  margin-left: -320px;
+  margin-left: -300px;
   transition: .3s ease-in;
 
   @include mq($bp-menu) {
@@ -35,7 +35,13 @@
   }
   
   a {
+    color: $color__body;
     text-decoration: none;
+
+    &:hover,
+    &:focus {
+     color: $color__action;
+    }
   }
 }
 
@@ -44,6 +50,12 @@
   font-size: .9em;
 
   a {
+    color: $color__body;
     text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      color: $color__action;
+    }
   }
 }
