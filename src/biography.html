@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <title>John Hosking</title>
-    <meta name="description" content="my static site template">
+    <meta name="description" content="Artist portfolio website">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> 
 
     
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
 
   </head>
 
@@ -316,27 +316,8 @@ Eamon Everall and Bernard Eveleigh</li>
     <script src="js/jquery-2.1.0.min.js"></script>
     <script src="js/jquery.fancybox.js"></script>
 
-    <script>
+    <script src="js/inits.js"></script>
 
-      $(document).ready(function(){
-        $(".menu-button").click(function(event){
-          event.preventDefault();
-          $(".sidenav").toggleClass("menushow");
-          $(".menu-button").toggleClass("active");     
-        });
-      });
-
-      $("[data-fancybox]").fancybox({
-        slideShow : false,
-        loop : true,
-        infobar : true,
-        protect : true,
-
-        caption : function( instance, item ) {
-          return $(this).find('.image__info').html();
-        }
-      });
-    </script>
     <!-- endbuild -->
 
   </body>

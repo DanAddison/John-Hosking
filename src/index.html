@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <title>John Hosking</title>
-    <meta name="description" content="my static site template">
+    <meta name="description" content="Artist portfolio website">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> 
 
     
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
 
   </head>
 
@@ -77,9 +77,9 @@
 
         <div class="span4-2 span6-2">
           <figure>
-            <a data-fancybox="gallery" href="images/dummy_paintings/abstract1.jpg">
+            <a data-fancybox="gallery" href="assets/images/dummy_paintings/abstract1.jpg">
               <figcaption>Reps</figcaption>
-              <img src="images/dummy_paintings/abstract1.jpg" alt="Reps">
+              <img src="assets/images/dummy_paintings/thumbs/abstract1.jpg" alt="Reps">
               <p class="image__info">Reps<br>2007 Oil on canvas</p>
             </a>
           </figure>
@@ -87,9 +87,9 @@
 
         <div class="span4-2 span6-2">
           <figure>
-            <a data-fancybox="gallery" href="images/dummy_paintings/abstract2.jpg">
+            <a data-fancybox="gallery" href="assets/images/dummy_paintings/abstract2.jpg">
               <figcaption>Title</figcaption>
-              <img src="images/dummy_paintings/thumbs/abstract2.jpg" alt="Reps">
+              <img src="assets/images/dummy_paintings/thumbs/abstract2.jpg" alt="Reps">
               <p class="image__info">Reps [detail]<br>2007 Oil on canvas</p>
             </a>  
           </figure>
@@ -97,9 +97,9 @@
 
         <div class="span4-2 span6-2">
           <figure>
-            <a data-fancybox="gallery" href="images/dummy_paintings/abstract3.jpg">
+            <a data-fancybox="gallery" href="assets/images/dummy_paintings/abstract3.jpg">
               <figcaption>Another One</figcaption>
-              <img src="images/dummy_paintings/thumbs/abstract3.jpg" alt="Reps">
+              <img src="assets/images/dummy_paintings/thumbs/abstract3.jpg" alt="Reps">
               <p class="image__info">Reps Again [detail]<br>2008 Oil on canvas</p>
             </a>
           </figure>
@@ -107,9 +107,9 @@
 
         <div class="span4-2 span6-2">
           <figure>
-            <a data-fancybox="gallery" href="images/dummy_paintings/abstract4.jpg">
+            <a data-fancybox="gallery" href="assets/images/dummy_paintings/abstract4.jpg">
               <figcaption>Yeah No Doubt</figcaption>
-              <img src="images/dummy_paintings/thumbs/abstract4.jpg" alt="Reps">
+              <img src="assets/images/dummy_paintings/thumbs/abstract4.jpg" alt="Reps">
               <p class="image__info">Reps [detail]<br>2010 Acrylic on canvas</p>
             </a>
           </figure>
@@ -117,9 +117,9 @@
 
         <div class="span4-2 span6-2">
           <figure>
-            <a data-fancybox="gallery" href="images/dummy_paintings/abstract5.jpg">
+            <a data-fancybox="gallery" href="assets/images/dummy_paintings/abstract5.jpg">
               <figcaption>Example Work</figcaption>
-              <img src="images/dummy_paintings/thumbs/abstract5.jpg" alt="Reps">
+              <img src="assets/images/dummy_paintings/thumbs/abstract5.jpg" alt="Reps">
               <p class="image__info">Reps [detail]<br>2007 Oil on canvas</p>
             </a>
           </figure>
@@ -127,9 +127,9 @@
 
         <div class="span4-2 span6-2">
           <figure>
-            <a data-fancybox="gallery" href="images/dummy_paintings/abstract6.jpg">
+            <a data-fancybox="gallery" href="assets/images/dummy_paintings/abstract6.jpg">
               <figcaption>Untitled</figcaption>
-              <img src="images/dummy_paintings/thumbs/abstract6.jpg" alt="Reps">
+              <img src="assets/images/dummy_paintings/thumbs/abstract6.jpg" alt="Reps">
               <p class="image__info">Reps [detail]<br>2007 Oil on canvas</p>
             </a>
           </figure>
@@ -137,9 +137,9 @@
 
         <div class="span4-2 span6-2">
           <figure>
-            <a data-fancybox="gallery" href="images/dummy_paintings/abstract7.jpg">
+            <a data-fancybox="gallery" href="assets/images/dummy_paintings/abstract7.jpg">
               <figcaption>Getting Jiggy</figcaption>
-              <img src="images/dummy_paintings/thumbs/abstract7.jpg" alt="Reps">
+              <img src="assets/images/dummy_paintings/thumbs/abstract7.jpg" alt="Reps">
               <p class="image__info">Reps [detail]<br>2007 Oil on canvas</p>
             </a>
           </figure>
@@ -147,9 +147,9 @@
 
         <div class="span4-2 span6-2">
           <figure>
-            <a data-fancybox="gallery" href="images/dummy_paintings/abstract8.jpg">
+            <a data-fancybox="gallery" href="assets/images/dummy_paintings/abstract8.jpg">
               <figcaption>Getting Jiggy</figcaption>
-              <img src="images/dummy_paintings/thumbs/abstract8.jpg" alt="Reps">
+              <img src="assets/images/dummy_paintings/thumbs/abstract8.jpg" alt="Reps">
               <p class="image__info">Reps [detail]<br>2007 Oil on canvas</p>
             </a>
           </figure>
@@ -171,27 +171,8 @@
     <script src="js/jquery-2.1.0.min.js"></script>
     <script src="js/jquery.fancybox.js"></script>
 
-    <script>
+    <script src="js/inits.js"></script>
 
-      $(document).ready(function(){
-        $(".menu-button").click(function(event){
-          event.preventDefault();
-          $(".sidenav").toggleClass("menushow");
-          $(".menu-button").toggleClass("active");     
-        });
-      });
-
-      $("[data-fancybox]").fancybox({
-        slideShow : false,
-        loop : true,
-        infobar : true,
-        protect : true,
-
-        caption : function( instance, item ) {
-          return $(this).find('.image__info').html();
-        }
-      });
-    </script>
     <!-- endbuild -->
 
   </body>
