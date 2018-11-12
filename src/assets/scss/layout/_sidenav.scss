@@ -45,6 +45,14 @@
   }
 }
 
+// active navigation based on current page
+body#painting .nav-painting a,
+body#printmaking .nav-printmaking a,
+body#biography .nav-bio a,
+body#contact .nav-contact a { 
+  color: $color__action;
+}
+
 // copyright and website by
 .credits {
   font-size: .9em;

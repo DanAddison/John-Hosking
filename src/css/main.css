@@ -967,6 +967,12 @@ iframe {
   .sidenav nav a:hover, .sidenav nav a:focus {
     text-decoration: underline; }
 
+body#painting .nav-painting a,
+body#printmaking .nav-printmaking a,
+body#biography .nav-bio a,
+body#contact .nav-contact a {
+  color: #02aa78; }
+
 .credits {
   font-size: .9em; }
   .credits a {

@@ -1,0 +1,3 @@
+John Hosking was born in 1952 and studied one year Foundation, three years Fine Art at Epsom School of Art and Design and three years P/T MA Fine Art at Canterbury KIAD.
+John's work is in public and private collections including the Metropole Arts Centre Permanent Collection, Hampshire County Council, The Department of the Enviroment and Imperial  College, London.
+The following is a list of One Man Shows and Exhibitions which have featured his work over the years.
