@@ -1,0 +1,14 @@
+{% macro biography (year, items) %}
+
+  <div class="row">
+    <p class="year">{{ year }}</p>
+    <ul class="items">
+
+      {% for item in items %}
+      <li>{{ item }}</li>
+      {% endfor %}
+
+    </ul>
+  </div>
+
+{% endmacro %}

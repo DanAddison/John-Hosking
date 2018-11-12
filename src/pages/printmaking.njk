@@ -11,23 +11,13 @@
 
       <div class="row__coltouching">
 
-      {# 
-      the 5 artwork block fields are: 
-        1. artwork_title
-        2. artwork_info
-        3. path_to_image
-        4. path_to_thumb
-        5. alt 
-      #}
-
         {{ artwork (
-        'Yeah Boy',
-        '1968 Collage on canvas',
-        'assets/images/dummy_paintings/abstract6.jpg',
-        'assets/images/dummy_paintings/thumbs/abstract6.jpg',
-        'here\'s soemthing crazy'
+        artwork_title= 'Yeah Boy',
+        artwork_info= '1968 Collage on canvas',
+        path_to_image= 'assets/images/dummy_paintings/abstract6.jpg',
+        path_to_thumb= 'assets/images/dummy_paintings/thumbs/abstract6.jpg',
+        alt= 'here\'s soemthing crazy'
         ) }}
-
 
         {{ artwork (
         'Another One',

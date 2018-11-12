@@ -1,6 +1,8 @@
 {% set body_id = "biography" %}
 {% extends "layout.njk" %}
 
+{% from "macros/_biography-macro.njk" import biography %}
+
 {% block content %}
 
   <main class="biography">
@@ -17,40 +19,45 @@
 
     <div class="row row--pad">
 
-      <div class="row">
-        <p class="year">1975</p>
-        <ul class="items">
-          <li>Camden Art Centre "New Contemporaries"</li>
-          <li>Royal Academy "Summer Exhibition"</li>
-        </ul>
-      </div>
-      <div class="row">
-        <p class="year">1976</p>
-        <ul class="items">
-          <li>Royal Overseas League Exhibition, London</li>
-        </ul>
-      </div>
-      <div class="row">
-        <p class="year">1977</p>
-        <ul class="items">
-          <li>London and Surrey Arts "Town and Country Exhibition", Kingston upon Thames</li>
-          <li>Royal Overseas League Exhibition, London</li>
-        </ul>
-      </div>
-      <div class="row">
-        <p class="year">1978</p>
-        <ul class="items">
-          <li>Folkestone, New Metropole: Summer Exhibition</li>
-        </ul>
-      </div>
-      <div class="row">
-        <p class="year">1979</p>
-        <ul class="items">
-          <li>"Kent Artists' Exhibition", Springfield, Maidstone</li>
-          <li>Runner-up Prize Winner "Saunders Watercolour Exhibition", Mall Galleries, London</li>
-          <li>One person exhibition, Margate Library</li>
-        </ul>
-      </div>
+      {{ biography (
+        year= '1975',
+        items= [
+        'Camden Art Centre "New Contemporaries"',
+        'Royal Academy "Summer Exhibition"'
+        ]
+      ) }}
+
+      {{ biography (
+        year= '1976',
+        items= [
+        'Royal Overseas League Exhibition, London'
+        ]
+      ) }}
+
+      {{ biography (
+        year= '1977',
+        items= [
+        'London and Surrey Arts "Town and Country Exhibition", Kingston upon Thames',
+        'Royal Overseas League Exhibition, London'
+        ]
+      ) }}
+
+      {{ biography (
+        year= '1978',
+        items= [
+        'Folkestone, New Metropole: Summer Exhibition'
+        ]
+      ) }}
+
+      {{ biography (
+        year= '1979',
+        items= [
+        '"Kent Artists\' Exhibition", Springfield, Maidstone',
+        'Runner-up Prize Winner "Saunders Watercolour Exhibition", Mall Galleries, London',
+        'One person exhibition, Margate Library'
+        ]
+      ) }}
+
       <div class="row">
         <p class="year">1980</p>
         <ul class="items">
