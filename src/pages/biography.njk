@@ -2,8 +2,13 @@
 {% extends "layout.njk" %}
 
 {% from "macros/_biography-macro.njk" import biography %}
+{% from "macros/_header-macro.njk" import title %}
 
 {% block content %}
+
+  {{ title (
+  page_title= 'Biography'
+  ) }}
 
   <main class="biography">
 

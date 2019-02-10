@@ -886,9 +886,6 @@ iframe {
 .page {
   min-height: 100vh;
   margin-left: 0; }
-  @media screen and (min-width: 900px) {
-    .page {
-      margin-left: 300px; } }
 
 /* center elements on page */
 .wrapper {
@@ -899,39 +896,15 @@ iframe {
 .hidden {
   display: none; }
 
-.site-header {
+.page__header {
   z-index: 10;
   width: 100%;
-  background-color: #dff3ed; }
-  @media screen and (min-width: 900px) {
-    .site-header {
-      display: none; } }
-  .site-header .row {
-    padding: 1em 2em; }
+  padding: 1.5em 2em; }
 
-.site-branding {
+.page__title {
+  width: 300px;
   margin-bottom: 0;
-  font-size: 2em; }
-  .site-branding a {
-    color: #222; }
-
-.menu-button {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  font-size: 1.5em;
-  color: #222; }
-  @media screen and (min-width: 900px) {
-    .menu-button {
-      display: none; } }
-  .menu-button .arrow {
-    display: none; }
-  .menu-button.active .burger {
-    display: none; }
-  .menu-button.active .arrow {
-    display: block;
-    margin-top: 0.1em;
-    font-size: 1.1em; }
+  font-size: 1.5em; }
 
 .sidenav {
   z-index: 20;
@@ -939,23 +912,27 @@ iframe {
   flex-direction: column;
   justify-content: space-between;
   width: 300px;
-  padding: 1em 1em 2em 2em;
+  padding: 1.5em 1em 2em 2em;
   position: fixed;
+  overflow: scroll;
   top: 0;
   left: 0;
   height: 100%;
   background-color: #dff3ed;
   margin-left: -300px;
   transition: .3s ease-in; }
-  @media screen and (min-width: 900px) {
-    .sidenav {
-      margin-left: 0; } }
   .sidenav.menushow {
     margin-left: 0; }
 
+.site-branding {
+  margin-bottom: 0;
+  font-size: 1.5em; }
+  .site-branding a {
+    color: #222; }
+
 .sidenav nav ul {
   list-style: none;
-  margin-top: 2em;
+  margin-top: 5em;
   padding: 0; }
 
 .sidenav nav li {
@@ -981,6 +958,35 @@ body#contact .nav-contact a {
     .credits a:hover, .credits a:focus {
       text-decoration: underline; }
 
+/*********************************************************
+## menu button
+*********************************************************/
+.menu-button {
+  z-index: 100;
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  font-size: 1.5em;
+  color: #222; }
+  .menu-button .arrow {
+    display: none; }
+  .menu-button.active .burger {
+    display: none; }
+  .menu-button.active .arrow {
+    display: block;
+    margin-top: 0.1em;
+    font-size: 1.1em; }
+
+@media screen and (min-width: 900px) {
+  #biography .page {
+    margin-left: 300px; }
+  #biography .sidenav {
+    margin-left: 0; }
+  #biography .menu-button {
+    display: none; }
+  #biography .page__title {
+    display: none; } }
+
 @media screen and (min-width: 900px) {
   .biography {
     padding: 0 2em; } }
@@ -996,6 +1002,16 @@ body#contact .nav-contact a {
   float: left;
   margin-bottom: 1em;
   width: calc(100% - 100px); }
+
+@media screen and (min-width: 900px) {
+  #contact .page {
+    margin-left: 300px; }
+  #contact .sidenav {
+    margin-left: 0; }
+  #contact .menu-button {
+    display: none; }
+  #contact .page__title {
+    display: none; } }
 
 @media screen and (min-width: 900px) {
   .contact {

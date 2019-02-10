@@ -1,3 +1,25 @@
+#contact {
+  
+  @include mq($bp-menu) {
+
+    .page {
+      margin-left: 300px;
+    }
+
+    .sidenav {
+      margin-left: 0;
+    }
+
+    .menu-button {
+      display: none;
+    }
+
+    .page__title {
+      display: none;
+    }
+  }
+}
+
 .contact {
 
   @include mq($bp-menu) {

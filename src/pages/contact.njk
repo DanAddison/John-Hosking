@@ -1,7 +1,13 @@
 {% set body_id = "contact" %}
 {% extends "layout.njk" %}
 
+{% from "macros/_header-macro.njk" import title %}
+
 {% block content %}
+
+  {{ title (
+  page_title= 'Contact'
+  ) }}
 
   <main class="contact">
 

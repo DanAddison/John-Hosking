@@ -1,4 +1,4 @@
-{% set body_id = "printmaking" %}
+{% set body_id = "painting" %}
 {% extends "layout.njk" %}
 
 {% from "macros/_artwork-macro.njk" import artwork %}
@@ -7,21 +7,29 @@
 {% block content %}
 
   {{ title (
-  page_title= 'Printmaking'
+  page_title= 'Painting'
   ) }}
 
-  <main class="printmaking">
+  <main class="painting">
 
     <div class="row row--pad">
 
       <div class="row__coltouching">
 
         {{ artwork (
-        artwork_title= 'Yeah Boy',
-        artwork_info= '1968 Collage on canvas',
-        path_to_image= 'assets/images/dummy_paintings/abstract6.jpg',
-        path_to_thumb= 'assets/images/dummy_paintings/thumbs/abstract6.jpg',
-        alt= 'here\'s soemthing crazy'
+        artwork_title= 'Reps',
+        artwork_info= '2004 Acrylic on canvas',
+        path_to_image= 'assets/images/dummy_paintings/abstract1.jpg',
+        path_to_thumb= 'assets/images/dummy_paintings/thumbs/abstract1.jpg',
+        alt= 'Photorealistic painting in black and white'
+        ) }}
+
+        {{ artwork (
+        '2nd Painting',
+        '2008 Oil on canvas',
+        'assets/images/dummy_paintings/abstract2.jpg',
+        'assets/images/dummy_paintings/thumbs/abstract2.jpg',
+        'Pukka painting'
         ) }}
 
         {{ artwork (
@@ -33,14 +41,6 @@
         ) }}
 
         {{ artwork (
-        'Reps',
-        '2004 Acrylic on canvas',
-        'assets/images/dummy_paintings/abstract1.jpg',
-        'assets/images/dummy_paintings/thumbs/abstract1.jpg',
-        'Photorealistic painting in black and white'
-        ) }}
-
-        {{ artwork (
         'Example Work',
         '1988 Oil on canvas',
         'assets/images/dummy_paintings/abstract5.jpg',
@@ -48,6 +48,13 @@
         'best painting ever'
         ) }}
 
+        {{ artwork (
+        'Yeah Boy',
+        '1968 Collage on canvas',
+        'assets/images/dummy_paintings/abstract6.jpg',
+        'assets/images/dummy_paintings/thumbs/abstract6.jpg',
+        'here\'s soemthing crazy'
+        ) }}
 
         {{ artwork (
         'Now What',
@@ -57,19 +64,11 @@
         'splotches'
         ) }}
 
-        {{ artwork (
-        '2nd Painting',
-        '2008 Oil on canvas',
-        'assets/images/dummy_paintings/abstract2.jpg',
-        'assets/images/dummy_paintings/thumbs/abstract2.jpg',
-        'Pukka painting'
-        ) }}
-        
       </div><!-- .row__coltouching -->
 
     </div><!-- .row .row--pad -->
 
-  </main><!-- .printmaking -->
+  </main><!-- .painting -->
 
 {% endblock %}
 

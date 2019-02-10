@@ -1,53 +1,11 @@
-.site-header {
+.page__header {
   z-index: 10;
-  // position: fixed;
   width: 100%;
-  // background-color: $white;
-  background-color: $color__canvas-medium;
-
-  @include mq($bp-menu) {
-    display: none;
-  }
-
-  .row {
-    padding: $spacing/2 $spacing;
-  }
+  padding: 1.5em 2em;
 }
 
-.site-branding {
+.page__title {
+  width: 300px;
   margin-bottom: 0;
-  font-size: 2em;
-
-  a {
-    color: $color__body;
-  }
-}
-
-.menu-button {
-  position: absolute;
-  top: 24px;
-  right: 24px;
   font-size: 1.5em;
-  color: $black;
-  
-  @include mq($bp-menu) {
-    display: none;
-  }
-  
-  .arrow {
-    display: none;
-  }
-  
-  &.active {
-    
-    .burger {
-      display: none;
-    }
-
-    .arrow {
-      display: block;
-      margin-top: 0.1em;
-      font-size: 1.1em;
-    }
-  }
 }
