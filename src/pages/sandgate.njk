@@ -1,0 +1,81 @@
+{% set body_id = "sandgate" %}
+{% set body_class = "painting-childpage" %}
+{% extends "layout.njk" %}
+
+{% from "macros/_artwork-macro.njk" import artwork %}
+{% from "macros/_header-macro.njk" import title %}
+
+{% block content %}
+
+  {{ title (
+  page_title= 'Sandgate'
+  ) }}
+
+  <main class="sandgate">
+
+    <div class="row row--pad">
+
+      <div class="row__coltouching">
+
+        {{ artwork (
+        artwork_title= 'Reps',
+        artwork_info= '2004 Acrylic on canvas',
+        path_to_image= 'assets/images/dummy_paintings/abstract1.jpg',
+        path_to_thumb= 'assets/images/dummy_paintings/thumbs/abstract1.jpg',
+        alt= 'Photorealistic painting in black and white'
+        ) }}
+
+        {{ artwork (
+        '2nd Painting',
+        '2008 Oil on canvas',
+        'assets/images/dummy_paintings/abstract2.jpg',
+        'assets/images/dummy_paintings/thumbs/abstract2.jpg',
+        'Pukka painting'
+        ) }}
+
+        {{ artwork (
+        'Another One',
+        '2001 Oil on canvas',
+        'assets/images/dummy_paintings/abstract3.jpg',
+        'assets/images/dummy_paintings/thumbs/abstract3.jpg',
+        'splashy paint'
+        ) }}
+
+        {{ artwork (
+        'Example Work',
+        '1988 Oil on canvas',
+        'assets/images/dummy_paintings/abstract5.jpg',
+        'assets/images/dummy_paintings/thumbs/abstract5.jpg',
+        'best painting ever'
+        ) }}
+
+        {{ artwork (
+        'Yeah Boy',
+        '1968 Collage on canvas',
+        'assets/images/dummy_paintings/abstract6.jpg',
+        'assets/images/dummy_paintings/thumbs/abstract6.jpg',
+        'here\'s soemthing crazy'
+        ) }}
+
+        {{ artwork (
+        'Now What',
+        '1977 watercolour on canvas',
+        'assets/images/dummy_paintings/abstract7.jpg',
+        'assets/images/dummy_paintings/thumbs/abstract7.jpg',
+        'splotches'
+        ) }}
+
+      </div><!-- .row__coltouching -->
+
+    </div><!-- .row .row--pad -->
+
+  </main><!-- .sandgate -->
+
+{% endblock %}
+
+{% block js %}
+<!--build:js js/da.fancybox.min.js -->
+<script src="js/lib/jquery.fancybox.js"></script>
+<script src="js/daFancybox.js"></script>
+<!-- endbuild -->
+{% endblock %}

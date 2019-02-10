@@ -49,10 +49,37 @@
      text-decoration: underline;
     }
   }
+
+  // submenus
+  ul li ul {
+    opacity: 0;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    display: none;
+  }
+
+  ul li ul.active {
+    opacity: 1;
+    display: block;
+  }
+
+  // .submenu-trigger {
+  //   cursor: pointer;
+
+  //   &:hover,
+  //   &:focus {
+  //     text-decoration: underline;
+  //   }
+  // }
+
+  .submenu {
+    margin: 1em 0 1em 2em;
+  }
 }
 
 // active navigation based on current page
 body#painting .nav-painting a,
+body.painting-childpage .nav-painting > a,
 body#printmaking .nav-printmaking a,
 body#biography .nav-bio a,
 body#contact .nav-contact a { 

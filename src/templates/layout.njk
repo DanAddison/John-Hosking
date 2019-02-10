@@ -30,6 +30,7 @@
   </head>
 
   <body id="{{ body_id }}">
+  <body class="{{ body_class }}">
 
     {% include "partials/_sidenav.njk" %}
 
@@ -47,6 +48,7 @@
     <!--build:js js/main.min.js -->
     <script src="js/lib/jquery-2.1.0.min.js"></script>
     <script src="js/daMenu.js"></script>
+    <script src="js/userTabbing.js"></script>
     <!-- endbuild -->
 
     {% block js %}{% endblock %}

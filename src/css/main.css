@@ -817,6 +817,16 @@ hr {
   border-width: 0;
   border-top: 1px solid #E1E1E1; }
 
+/*********************************************************
+## no ugly blue focus ring for non-keyboard users - refers to user-tabbing.js file
+*********************************************************/
+body:not(.user-is-tabbing) button:focus,
+body:not(.user-is-tabbing) input:focus,
+body:not(.user-is-tabbing) select:focus,
+body:not(.user-is-tabbing) textarea:focus,
+body:not(.user-is-tabbing) a:focus {
+  outline: none; }
+
 /* Text meant only for screen readers. */
 .screen-reader-text {
   border: 0;
@@ -944,7 +954,21 @@ iframe {
   .sidenav nav a:hover, .sidenav nav a:focus {
     text-decoration: underline; }
 
+.sidenav nav ul li ul {
+  opacity: 0;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  display: none; }
+
+.sidenav nav ul li ul.active {
+  opacity: 1;
+  display: block; }
+
+.sidenav nav .submenu {
+  margin: 1em 0 1em 2em; }
+
 body#painting .nav-painting a,
+body.painting-childpage .nav-painting > a,
 body#printmaking .nav-printmaking a,
 body#biography .nav-bio a,
 body#contact .nav-contact a {

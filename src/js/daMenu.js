@@ -5,3 +5,10 @@ $(document).ready(function(){
     $(".menu-button").toggleClass("active");     
   });
 });
+
+$(document).ready(function(){
+
+  $(".submenu-trigger").click(function() {
+      $(".submenu", this).toggleClass("active");
+  });
+});
