@@ -14,20 +14,21 @@
       display: none;
     }
 
-    .page__title {
-      display: none;
+    .page__header {
+      padding-left: $spacing*2;
+
+      @include mq($bp-sidebar) {
+        padding-left: $spacing*4;
+      }
     }
   }
 }
 
 .biography {
+  max-width: $bp-l;
 
   @include mq($bp-menu) {
     padding: 0 $spacing;
-  }
-
-  .intro {
-    max-width: $bp-m;
   }
 
   .year {

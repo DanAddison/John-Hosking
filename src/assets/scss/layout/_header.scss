@@ -4,7 +4,7 @@
   padding: 1.5em 2em;
 
   @include mq($bp-sidebar) {
-    padding-left: 7em;
+    padding-left: $spacing*3;
   }
 }
 

@@ -14,13 +14,18 @@
       display: none;
     }
 
-    .page__title {
-      display: none;
+    .page__header {
+      padding-left: $spacing*2;
+
+      @include mq($bp-sidebar) {
+        padding-left: $spacing*4;
+      }
     }
   }
 }
 
 .contact {
+  max-width: $bp-l;
 
   @include mq($bp-menu) {
     padding: 0 $spacing;

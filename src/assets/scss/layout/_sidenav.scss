@@ -85,6 +85,10 @@ body#contact .nav-contact a {
 .credits {
   font-size: .9em;
 
+  .copyright {
+    margin-bottom: .25em;
+  }
+
   a {
     color: $color__action;
     text-decoration: none;
