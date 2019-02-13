@@ -1,14 +1,22 @@
 .page {
   min-height: 100vh;
   margin-left: 0;
+
+  @include mq($bp-sidebar) {
+    margin-left: 300px;
+
+    main .row {
+      margin-left: $spacing*2;
+    }
+  }
 }
 
 /* center elements on page */
-.wrapper {
-  width: 95%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+// .wrapper {
+//   width: 95%;
+//   max-width: 1200px;
+//   margin: 0 auto;
+// }
 
 .hidden {
   display: none;

@@ -17,6 +17,10 @@
   &.menushow {
     margin-left: 0;
   }
+
+  @include mq($bp-sidebar) {
+    margin-left: 0;
+  }
 }
 
 .site-branding {
@@ -62,15 +66,6 @@
     opacity: 1;
     display: block;
   }
-
-  // .submenu-trigger {
-  //   cursor: pointer;
-
-  //   &:hover,
-  //   &:focus {
-  //     text-decoration: underline;
-  //   }
-  // }
 
   .submenu {
     margin: 1em 0 1em 2em;
@@ -127,5 +122,9 @@ body#contact .nav-contact a {
       margin-top: 0.1em;
       font-size: 1.1em;
     }
+  }
+
+  @include mq($bp-sidebar) {
+    display: none;
   }
 }

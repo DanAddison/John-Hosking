@@ -2,6 +2,10 @@
   z-index: 10;
   width: 100%;
   padding: 1.5em 2em;
+
+  @include mq($bp-sidebar) {
+    padding-left: 7em;
+  }
 }
 
 .page__title {

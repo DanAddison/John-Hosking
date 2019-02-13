@@ -3,4 +3,11 @@
   figure img{
     max-height: 75vh;
   }
+
+  @include mq($bp-sidebar) {
+    
+    .page__title {
+      display: none;
+    }
+  }
 }
