@@ -1,7 +1,11 @@
 #home {
 
-  figure img{
-    max-height: 75vh;
+  img {
+    margin-bottom: $spacing;
+
+    @include mq($bp-m) {
+      margin-bottom: 0;
+    }
   }
 
   @include mq($bp-sidebar) {

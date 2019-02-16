@@ -1011,8 +1011,11 @@ body#contact .nav-contact a {
     .menu-button {
       display: none; } }
 
-#home figure img {
-  max-height: 75vh; }
+#home img {
+  margin-bottom: 2em; }
+  @media screen and (min-width: 700px) {
+    #home img {
+      margin-bottom: 0; } }
 
 @media screen and (min-width: 1600px) {
   #home .page__title {
