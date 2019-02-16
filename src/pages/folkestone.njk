@@ -1,0 +1,136 @@
+{% set body_id = "folkestone" %}
+{% set body_class = "gallery-page painting-childpage" %}
+{% extends "layout.njk" %}
+
+{% from "macros/_artwork-macro.njk" import artwork %}
+{% from "macros/_header-macro.njk" import title %}
+
+{% block content %}
+
+  {{ title (
+  page_title= 'folkestone'
+  ) }}
+
+  <main class="folkestone">
+
+    <div class="row row--pad">
+
+      <div class="row__coltouching">
+
+        {{ artwork (
+        artwork_title= 'Bandstand on the Leas',
+        artwork_info= '1995 - 54cm x 54cm',
+        path_to_image= 'assets/images/Painting/Folkestone/Bandstand_on_the_Leas_1995_54x54.jpg',
+        path_to_thumb= 'assets/images/Painting/Folkestone/Bandstand_on_the_Leas_1995_54x54-thumb.jpg',
+        alt= 'painting of the Leas bandstand'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Channel Tunnel',
+        artwork_info= '1992 - 28cm x 35cm',
+        path_to_image= 'assets/images/Painting/Folkestone/Channel_Tunnel_1992_28x35.jpg',
+        path_to_thumb= 'assets/images/Painting/Folkestone/Channel_Tunnel_1992_28x35-thumb.jpg',
+        alt= 'painting of the Channel Tunnel terminal and surrounding hills'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Harbour Steps',
+        artwork_info= '28cm x 35cm',
+        path_to_image= 'assets/images/Painting/Folkestone/Harbour_Steps_23x23.jpg',
+        path_to_thumb= 'assets/images/Painting/Folkestone/Harbour_Steps_23x23-thumb.jpg',
+        alt= 'painting of the steps leading down to Folkestone Harbour'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Flight',
+        artwork_info= '1994 - 20cm x 23cm',
+        path_to_image= 'assets/images/Painting/Folkestone/Flight_1994_20x23.jpg',
+        path_to_thumb= 'assets/images/Painting/Folkestone/Flight_1994_20x23-thumb.jpg',
+        alt= 'painting of a seagull flying over the Leas'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Folkestone Easter',
+        artwork_info= '1992',
+        path_to_image= 'assets/images/Painting/Folkestone/Folkestone_Easter_1992.jpg',
+        path_to_thumb= 'assets/images/Painting/Folkestone/Folkestone_Easter_1992-thumb.jpg',
+        alt= 'painting of figures on hill with crosses'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Folkestone Sands',
+        artwork_info= '25cm x 23cm',
+        path_to_image= 'assets/images/Painting/Folkestone/Folkestone_Sands_25x30.jpg',
+        path_to_thumb= 'assets/images/Painting/Folkestone/Folkestone_Sands_25x30-thumb.jpg',
+        alt= 'painting of the Sunny Sands from above'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Helter Skelter',
+        artwork_info= '1992',
+        path_to_image= 'assets/images/Painting/Folkestone/Helter_Skelter_1992.jpg',
+        path_to_thumb= 'assets/images/Painting/Folkestone/Helter_Skelter_1992-thumb.jpg',
+        alt= 'Painting of the Helter Skelter at Folkestone Rotunda Amusement Park'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Leas Bench',
+        path_to_image= 'assets/images/Painting/Folkestone/Leas_Bench.jpg',
+        path_to_thumb= 'assets/images/Painting/Folkestone/Leas_Bench-thumb.jpg',
+        alt= 'painting of a figure on a bench from behind'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Leas Walk',
+        artwork_info= '20cm x 56cm',
+        path_to_image= 'assets/images/Painting/Folkestone/Leas_Walk _20x56.jpg',
+        path_to_thumb= 'assets/images/Painting/Folkestone/Leas_Walk _20x56-thumb.jpg',
+        alt= 'panoramic painting of a figure walking along Leas with sea in background'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Promenade',
+        artwork_info= '20cm x 20cm',
+        path_to_image= 'assets/images/Painting/Folkestone/Promenade_20x20.jpg',
+        path_to_thumb= 'assets/images/Painting/Folkestone/Promenade_20x20-thumb.jpg',
+        alt= 'painting of figures strolling down the Leas from above'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Roundabout',
+        artwork_info= '1996',
+        path_to_image= 'assets/images/Painting/Folkestone/Roundabout_1996.jpg',
+        path_to_thumb= 'assets/images/Painting/Folkestone/Roundabout_1996-thumb.jpg',
+        alt= 'painting of a roundabout with the South Downs behind'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'The Leas Promenade',
+        artwork_info= '28cm x 125cm',
+        path_to_image= 'assets/images/Painting/Folkestone/The_Leas_Promanade_28x125.jpg',
+        path_to_thumb= 'assets/images/Painting/Folkestone/The_Leas_Promanade_28x125-thumb.jpg',
+        alt= 'panoramic painting of the Leas overlooking the sea with figures sitting and standing'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Tunnel Works',
+        artwork_info= '1996',
+        path_to_image= 'assets/images/Painting/Folkestone/Tunnel_Works_1989-op.jpg',
+        path_to_thumb= 'assets/images/Painting/Folkestone/Tunnel_Works_1989-thumb.jpg',
+        alt= 'painting of the Channel Tunnel terminal under construction'
+        ) }}
+
+      </div><!-- .row__coltouching -->
+
+    </div><!-- .row .row--pad -->
+
+  </main><!-- .folkestone -->
+
+{% endblock %}
+
+{% block js %}
+<!--build:js js/da.fancybox.min.js -->
+<script src="js/lib/jquery.fancybox.js"></script>
+<script src="js/daFancybox.js"></script>
+<!-- endbuild -->
+{% endblock %}
