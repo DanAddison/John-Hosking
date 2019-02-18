@@ -1,0 +1,96 @@
+{% set body_id = "kent" %}
+{% set body_class = "gallery-page painting-childpage" %}
+{% extends "layout.njk" %}
+
+{% from "macros/_artwork-macro.njk" import artwork %}
+{% from "macros/_header-macro.njk" import title %}
+
+{% block content %}
+
+  {{ title (
+  page_title= 'Kent'
+  ) }}
+
+  <main class="kent">
+
+    <div class="row row--pad">
+
+      <div class="row__coltouching">
+
+        {{ artwork (
+        artwork_title= 'Burning',
+        artwork_info= '1991 - 25cm x 25cm',
+        path_to_image= 'assets/images/Painting/Kent/Burning_1991_20x25.jpg',
+        path_to_thumb= 'assets/images/Painting/Kent/Burning_1991_20x25-thumb.jpg',
+        alt= 'muted painting of field burning'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Marsh Burning',
+        artwork_info= '25cm x 25cm',
+        path_to_image= 'assets/images/Painting/Kent/Marsh_Burning_23x25.jpg',
+        path_to_thumb= 'assets/images/Painting/Kent/Marsh_Burning_23x25-thumb.jpg',
+        alt= 'painting of field burning'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Dungeness',
+        artwork_info= '25cm x 25cm',
+        path_to_image= 'assets/images/Painting/Kent/Dungeness_25x25.jpg',
+        path_to_thumb= 'assets/images/Painting/Kent/Dungeness_25x25-thumb.jpg',
+        alt= 'brooding painting of Dungeness lighthouse'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Rye',
+        artwork_info= '15cm x 25cm',
+        path_to_image= 'assets/images/Painting/Kent/Rye_15x25.jpg',
+        path_to_thumb= 'assets/images/Painting/Kent/Rye_15x25-thumb.jpg',
+        alt= 'painting of fishing boats standing on the sand at low tide'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Rye Harbour',
+        artwork_info= '23cm x 30cm',
+        path_to_image= 'assets/images/Painting/Kent/Rye_Harbour_23x30.jpg',
+        path_to_thumb= 'assets/images/Painting/Kent/Rye_Harbour_23x30-thumb.jpg',
+        alt= 'painting of wild looking coast with two small figures in centre'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'St Margarets',
+        artwork_info= '1994 - 23cm x 25cm',
+        path_to_image= 'assets/images/Painting/Kent/St_Magarets_1994_23_x_25.jpg',
+        path_to_thumb= 'assets/images/Painting/Kent/St_Magarets_1994_23_x_25-thumb.jpg',
+        alt= 'expressive painting of cliffs and sea'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'St Margarets Bay',
+        artwork_info= '25cm x 23cm',
+        path_to_image= 'assets/images/Painting/Kent/St_Magarets_Bay_25x23.jpg',
+        path_to_thumb= 'assets/images/Painting/Kent/St_Magarets_Bay_25x23-thumb.jpg',
+        alt= 'expressive painting of cliffs and sea'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Untitled',
+        path_to_image= 'assets/images/Painting/Kent/untitled-op.jpg',
+        path_to_thumb= 'assets/images/Painting/Kent/untitled-thumb.jpg',
+        alt= 'painting of fishing boats high on the beach'
+        ) }}
+
+      </div><!-- .row__coltouching -->
+
+    </div><!-- .row .row--pad -->
+
+  </main><!-- .kent -->
+
+{% endblock %}
+
+{% block js %}
+<!--build:js js/da.fancybox.min.js -->
+<script src="js/lib/jquery.fancybox.js"></script>
+<script src="js/daFancybox.js"></script>
+<!-- endbuild -->
+{% endblock %}
