@@ -1018,6 +1018,9 @@ body#contact .nav-contact a {
       margin-bottom: 0; } }
 
 @media screen and (min-width: 1600px) {
+  #home main.welcome .row {
+    max-width: 1900px;
+    margin-right: 4em; }
   #home .page__title {
     display: none; } }
 

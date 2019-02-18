@@ -8,8 +8,14 @@
     }
   }
 
+  
   @include mq($bp-sidebar) {
     
+    main.welcome .row {
+      max-width: 1900px;
+      margin-right: $spacing*2;
+    }
+
     .page__title {
       display: none;
     }
