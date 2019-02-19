@@ -1,0 +1,93 @@
+{% set body_id = "portrait" %}
+{% set body_class = "gallery-page painting-childpage" %}
+{% extends "layout.njk" %}
+
+{% from "macros/_artwork-macro.njk" import artwork %}
+{% from "macros/_header-macro.njk" import title %}
+
+{% block content %}
+
+  {{ title (
+  page_title= 'Portrait'
+  ) }}
+
+  <main class="portrait">
+
+    <div class="row row--pad">
+
+      <div class="row__coltouching">
+
+        {{ artwork (
+        artwork_title= 'Blue Self Portrait',
+        path_to_image= 'assets/images/Painting/portrait/Blue_Self_Portrait.jpg',
+        path_to_thumb= 'assets/images/Painting/portrait/Blue_Self_Portrait-thumb.jpg',
+        alt= 'painting of still life including small mirror with artist reflected'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Studio Self Portrait',
+        path_to_image= 'assets/images/Painting/portrait/Studio_Self_Portrait.jpg',
+        path_to_thumb= 'assets/images/Painting/portrait/Studio_Self_Portrait-thumb.jpg',
+        alt= 'painting of dark interior with seated artist reflected in three mirrors'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Self Portrait',
+        path_to_image= 'assets/images/Painting/portrait/Self_Portrait.jpg',
+        path_to_thumb= 'assets/images/Painting/portrait/Self_Portrait-thumb.jpg',
+        alt= 'self portrait painting in almost pointillist style with fractured irridescent patterning around the border'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Self Portrait',
+        artwork_info= '25cm x 18cm',
+        path_to_image= 'assets/images/Painting/portrait/Self_portrait_1_25x18.jpg',
+        path_to_thumb= 'assets/images/Painting/portrait/Self_portrait_1_25x18.jpg',
+        alt= 'self portrait painting of artist looking directly back in close up'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Self Portrait',
+        artwork_info= '25cm x 18cm',
+        path_to_image= 'assets/images/Painting/portrait/Self_portrait_2_25x18.jpg',
+        path_to_thumb= 'assets/images/Painting/portrait/Self_portrait_2_25x18.jpg',
+        alt= 'self portrait painting of artist looking directly back in close up'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Self Portrait',
+        artwork_info= '25cm x 18cm',
+        path_to_image= 'assets/images/Painting/portrait/Self_portrait_3_25x18.jpg',
+        path_to_thumb= 'assets/images/Painting/portrait/Self_portrait_3_25x18.jpg',
+        alt= 'self portrait painting of artist looking directly back in close up'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Sonia I',
+        path_to_image= 'assets/images/Painting/portrait/Sonia_1.jpg',
+        path_to_thumb= 'assets/images/Painting/portrait/Sonia_1-thumb.jpg',
+        alt= 'painting of girl in profile with dark hair'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Sonia II',
+        path_to_image= 'assets/images/Painting/portrait/Sonia_2.jpg',
+        path_to_thumb= 'assets/images/Painting/portrait/Sonia_2-thumb.jpg',
+        alt= 'painting of girl with dark hair against red fabric background'
+        ) }}
+        
+
+      </div><!-- .row__coltouching -->
+
+    </div><!-- .row .row--pad -->
+
+  </main><!-- .portrait -->
+
+{% endblock %}
+
+{% block js %}
+<!--build:js js/da.fancybox.min.js -->
+<script src="js/lib/jquery.fancybox.js"></script>
+<script src="js/daFancybox.js"></script>
+<!-- endbuild -->
+{% endblock %}
