@@ -1,0 +1,105 @@
+{% set body_id = "murals" %}
+{% set body_class = "gallery-page painting-childpage" %}
+{% extends "layout.njk" %}
+
+{% from "macros/_artwork-macro.njk" import artwork %}
+{% from "macros/_header-macro.njk" import title %}
+
+{% block content %}
+
+  {{ title (
+  page_title= 'Murals'
+  ) }}
+
+  <main class="murals">
+
+    <div class="row row--pad">
+
+      <div class="row__coltouching">
+
+        {{ artwork (
+        artwork_title= 'Folkestone Sports Centre mural',
+        path_to_image= 'assets/images/Painting/Murals/Folkestone_Sports_Centre_Mural.jpg',
+        path_to_thumb= 'assets/images/Painting/Murals/Folkestone_Sports_Centre_Mural-thumb.jpg',
+        alt= 'wall mural of figures in various athletic activities'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Dave\'s Gym',
+        path_to_image= 'assets/images/Painting/Murals/Dave\'s_Gym_2.jpg',
+        path_to_thumb= 'assets/images/Painting/Murals/Dave\'s_Gym_2-thumb.jpg',
+        alt= 'wall mural of muscular figures exercising and surfing'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Dave\'s Gym',
+        path_to_image= 'assets/images/Painting/Murals/Dave\'sGym.jpg',
+        path_to_thumb= 'assets/images/Painting/Murals/Dave\'sGym-thumb.jpg',
+        alt= 'wall mural of muscular figures exercising and surfing'
+        ) }}      
+
+        {{ artwork (
+        artwork_title= 'Gable-end mural, Dover',
+        path_to_image= 'assets/images/Painting/Murals/Gable_end_mural_Dover.jpg',
+        path_to_thumb= 'assets/images/Painting/Murals/Gable_end_mural_Dover-thumb.jpg',
+        alt= 'fantastical wall mural on gable end of terraced houses featuring a rainbow and a dragon'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Gable-end mural, Dover',
+        path_to_image= 'assets/images/Painting/Murals/Gable_end_mural_Dover_2.jpg',
+        path_to_thumb= 'assets/images/Painting/Murals/Gable_end_mural_Dover_2-thumb.jpg',
+        alt= 'fantastical wall mural on gable end of terraced houses featuring a rainbow and a dragon'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Cafe commission',
+        path_to_image= 'assets/images/Painting/Murals/Commission_for_cafe.jpg',
+        path_to_thumb= 'assets/images/Painting/Murals/Commission_for_cafe-thumb.jpg',
+        alt= 'painting of panoramic Victorian seaside resort scene in Pointillist style on a cafe wall'
+        ) }}  
+
+        {{ artwork (
+        artwork_title= 'Shepway Thought-Mobile',
+        path_to_image= 'assets/images/Painting/Murals/Shepway_Thought_Mobile_2.jpg',
+        path_to_thumb= 'assets/images/Painting/Murals/Shepway_Thought_Mobile_2-thumb.jpg',
+        alt= 'playful painted superstructure on top of a car featuring a 3D figure after Rodin\'s The Thinker'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Shepway Thought-Mobile',
+        path_to_image= 'assets/images/Painting/Murals/Shepway_Thought_Mobile.jpg',
+        path_to_thumb= 'assets/images/Painting/Murals/Shepway_Thought_Mobile-thumb.jpg',
+        alt= 'playful painted superstructure on top of a car featuring a 3D figure after Rodin\'s The Thinker'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Underpass commission',
+        path_to_image= 'assets/images/Painting/Murals/Underpass_commission_2.jpg',
+        path_to_thumb= 'assets/images/Painting/Murals/Underpass_commission_2-thumb.jpg',
+        alt= 'colourful wall mural in an underpass'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Underpass commission',
+        path_to_image= 'assets/images/Painting/Murals/Underpass_commission.jpg',
+        path_to_thumb= 'assets/images/Painting/Murals/Underpass_commission-thumb.jpg',
+        alt= 'colourful wall mural in an underpass'
+        ) }}
+
+        
+
+      </div><!-- .row__coltouching -->
+
+    </div><!-- .row .row--pad -->
+
+  </main><!-- .murals -->
+
+{% endblock %}
+
+{% block js %}
+<!--build:js js/da.fancybox.min.js -->
+<script src="js/lib/jquery.fancybox.js"></script>
+<script src="js/daFancybox.js"></script>
+<!-- endbuild -->
+{% endblock %}
