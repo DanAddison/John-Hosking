@@ -1,0 +1,228 @@
+{% set body_id = "france" %}
+{% set body_class = "gallery-page painting-childpage" %}
+{% extends "layout.njk" %}
+
+{% from "macros/_artwork-macro.njk" import artwork %}
+{% from "macros/_header-macro.njk" import title %}
+
+{% block content %}
+
+  {{ title (
+  page_title= 'South of France'
+  ) }}
+
+  <main class="france">
+
+    <div class="row row--pad">
+
+      <div class="row__coltouching">
+
+        {{ artwork (
+        artwork_title= 'Arboras',
+        artwork_info= '40cm x 40cm',
+        path_to_image= 'assets/images/Painting/France/Arboras_40x40.jpg',
+        path_to_thumb= 'assets/images/Painting/France/Arboras_40x40-thumb.jpg',
+        alt= 'painting of alleyway and roofs'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Shadow',
+        path_to_image= 'assets/images/Painting/France/Shadow.jpg',
+        path_to_thumb= 'assets/images/Painting/France/Shadow-thumb.jpg',
+        alt= 'painting of landscape with shadow of figure and fence in foreground'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Arboras Bridge',
+        artwork_info= '1992',
+        path_to_image= 'assets/images/Painting/France/Arboras_Bridge_1992.jpg',
+        path_to_thumb= 'assets/images/Painting/France/Arboras_Bridge_1992-thumb.jpg',
+        alt= 'roiling landscape painting of bridge with cypress trees'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Arboras',
+        path_to_image= 'assets/images/Painting/France/Arboras.jpg',
+        path_to_thumb= 'assets/images/Painting/France/Arboras-thumb.jpg',
+        alt= 'painting of side of building with plants in summer'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Olives',
+        artwork_info= '40cm x 40cm',
+        path_to_image= 'assets/images/Painting/France/Olives_40x40.jpg',
+        path_to_thumb= 'assets/images/Painting/France/Olives_40x40-thumb.jpg',
+        alt= 'vibrant painting of small trees'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Charente',
+        artwork_info= '1989 - 20cm x 28cm',
+        path_to_image= 'assets/images/Painting/France/Charente_1989_20x28.jpg',
+        path_to_thumb= 'assets/images/Painting/France/Charente_1989_20x28-thumb.jpg',
+        alt= 'painting of buildings on farmland'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Charente',
+        artwork_info= '1989',
+        path_to_image= 'assets/images/Painting/France/Charente_1989.jpg',
+        path_to_thumb= 'assets/images/Painting/France/Charente_1989-thumb.jpg',
+        alt= 'colourful painting of a field'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Chairman\'s Garden',
+        path_to_image= 'assets/images/Painting/France/Charmian\'s_Garden.jpg',
+        path_to_thumb= 'assets/images/Painting/France/Charmian\'s_Garden-thumb.jpg',
+        alt= 'painting of summery garden pots and plants'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Chateau',
+        path_to_image= 'assets/images/Painting/France/Chateau.jpg',
+        path_to_thumb= 'assets/images/Painting/France/Chateau-thumb.jpg',
+        alt= 'painting of chateau rising beyond trees'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Crossroads',
+        path_to_image= 'assets/images/Painting/France/Crossroads.jpg',
+        path_to_thumb= 'assets/images/Painting/France/Crossroads-thumb.jpg',
+        alt= 'painting of junction with stop sign and statue of a cross'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Gate',
+        artwork_info= '30cm x 30cm',
+        path_to_image= 'assets/images/Painting/France/Gate_30x30.jpg',
+        path_to_thumb= 'assets/images/Painting/France/Gate_30x30-thumb.jpg',
+        alt= 'painting of gate'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Montpeyroux',
+        path_to_image= 'assets/images/Painting/France/Montpeyroux.jpg',
+        path_to_thumb= 'assets/images/Painting/France/Montpeyroux-thumb.jpg',
+        alt= 'light colourful landscape painting of farmland'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Pear Tree in the South of France',
+        artwork_info= '23cm x 23cm',
+        path_to_image= 'assets/images/Painting/France/Pear_Tree_in_the_South_of_France_23x23.jpg',
+        path_to_thumb= 'assets/images/Painting/France/Pear_Tree_in_the_South_of_France_23x23-thumb.jpg',
+        alt= 'painting of tree foliage with landscape behind'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Saint Jean de Fos',
+        path_to_image= 'assets/images/Painting/France/Saint_Jean_de_Fos.jpg',
+        path_to_thumb= 'assets/images/Painting/France/Saint_Jean_de_Fos-thumb.jpg',
+        alt= 'painting of people sunbathing by water with bridge'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Sophie Pond',
+        path_to_image= 'assets/images/Painting/France/Sophie_Pond.jpg',
+        path_to_thumb= 'assets/images/Painting/France/Sophie_Pond-thumb.jpg',
+        alt= 'loose painting of young girl bathing with house behind'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Sunflowers',
+        artwork_info= '30cm x 64cm',
+        path_to_image= 'assets/images/Painting/France/Sunflowers_30x64.jpg',
+        path_to_thumb= 'assets/images/Painting/France/Sunflowers_30x64-thumb.jpg',
+        alt= 'dark painting of a field of sunflowers'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Sunflowers',
+        artwork_info= '1989',
+        path_to_image= 'assets/images/Painting/France/Sunflowers_1989.jpg',
+        path_to_thumb= 'assets/images/Painting/France/Sunflowers_1989-thumb.jpg',
+        alt= 'colourful panoramic painting of a field of sunflowers with blue trees in background'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Untitled',
+        path_to_image= 'assets/images/Painting/France/Untitled_1.jpg',
+        path_to_thumb= 'assets/images/Painting/France/Untitled_1-thumb.jpg',
+        alt= 'colourful painting of a landscape in France'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Untitled',
+        path_to_image= 'assets/images/Painting/France/Untitled_2.jpg',
+        path_to_thumb= 'assets/images/Painting/France/Untitled_2-thumb.jpg',
+        alt= 'colourful painting of a landscape in France'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Untitled',
+        path_to_image= 'assets/images/Painting/France/Untitled_3.jpg',
+        path_to_thumb= 'assets/images/Painting/France/Untitled_3-thumb.jpg',
+        alt= 'painting of buildings and landscape in France'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Untitled',
+        path_to_image= 'assets/images/Painting/France/Untitled_4.jpg',
+        path_to_thumb= 'assets/images/Painting/France/Untitled_4-thumb.jpg',
+        alt= 'expressive painting of bottle and glass in a dim interior with bright window framing a landscape'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Untitled',
+        path_to_image= 'assets/images/Painting/France/Untitled_5.jpg',
+        path_to_thumb= 'assets/images/Painting/France/Untitled_5-thumb.jpg',
+        alt= 'painting of dramatic red sky above a landscape with blue cypress trees'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Untitled',
+        path_to_image= 'assets/images/Painting/France/Untitled_6.jpg',
+        path_to_thumb= 'assets/images/Painting/France/Untitled_6-thumb.jpg',
+        alt= 'painting of a farmland in France'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Vines',
+        artwork_info= '40cm x 40cm',
+        path_to_image= 'assets/images/Painting/France/Vines_40x40.jpg',
+        path_to_thumb= 'assets/images/Painting/France/Vines_40x40-thumb.jpg',
+        alt= 'colourful landscape painting with bold yellows'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Arboras II',
+        artwork_info= '30cm x 30cm',
+        path_to_image= 'assets/images/Painting/France/Arboras_2_30x30.jpg',
+        path_to_thumb= 'assets/images/Painting/France/Arboras_2_30x30-thumb.jpg',
+        alt= 'painting looking down at rooftops and fields beyond'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Arboras',
+        artwork_info= '1992',
+        path_to_image= 'assets/images/Painting/France/Arboras_1992.jpg',
+        path_to_thumb= 'assets/images/Painting/France/Arboras_1992-thumb.jpg',
+        alt= 'blue painting of narrow street with figure sketching a dog and a cyclist'
+        ) }}
+
+
+      </div><!-- .row__coltouching -->
+
+    </div><!-- .row .row--pad -->
+
+  </main><!-- .france -->
+
+{% endblock %}
+
+{% block js %}
+<!--build:js js/da.fancybox.min.js -->
+<script src="js/lib/jquery.fancybox.js"></script>
+<script src="js/daFancybox.js"></script>
+<!-- endbuild -->
+{% endblock %}

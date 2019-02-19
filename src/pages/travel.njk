@@ -1,0 +1,154 @@
+{% set body_id = "travel" %}
+{% set body_class = "gallery-page painting-childpage" %}
+{% extends "layout.njk" %}
+
+{% from "macros/_artwork-macro.njk" import artwork %}
+{% from "macros/_header-macro.njk" import title %}
+
+{% block content %}
+
+  {{ title (
+  page_title= 'Travel'
+  ) }}
+
+  <main class="travel">
+
+    <div class="row row--pad">
+
+      <div class="row__coltouching">
+
+        {{ artwork (
+        artwork_title= 'Cuba Triptych I',
+        path_to_image= 'assets/images/Painting/Travel/Cuba_Triptych_1.jpg',
+        path_to_thumb= 'assets/images/Painting/Travel/Cuba_Triptych_1-thumb.jpg',
+        alt= 'panel 1 of 3 of a striking still life painting on Cuba balcony which features a small mural of Che Guevara'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Cuba Triptych II',
+        path_to_image= 'assets/images/Painting/Travel/Cuba_Triptych_2.jpg',
+        path_to_thumb= 'assets/images/Painting/Travel/Cuba_Triptych_2-thumb.jpg',
+        alt= 'panel 2 of 3 of a striking still life painting on Cuba balcony which features fruit bowl and tropical bird'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Cuba Triptych III',
+        path_to_image= 'assets/images/Painting/Travel/Cuba_Triptych_3.jpg',
+        path_to_thumb= 'assets/images/Painting/Travel/Cuba_Triptych_3-thumb.jpg',
+        alt= 'panel 3 of 3 of a striking still life painting on Cuba balcony which features a rooster'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'China Figure',
+        artwork_info= '46cm x 36cm',
+        path_to_image= 'assets/images/Painting/Travel/china_figure_46x36.jpg',
+        path_to_thumb= 'assets/images/Painting/Travel/china_figure_46x36-thumb.jpg',
+        alt= 'painting of a figure from behind in front of railway tracks'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'China IV',
+        path_to_image= 'assets/images/Painting/Travel/China_4.jpg',
+        path_to_thumb= 'assets/images/Painting/Travel/China_4-thumb.jpg',
+        alt= 'blue toned painting of a figure walking beside railway tracks'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'China',
+        artwork_info= '1981',
+        path_to_image= 'assets/images/Painting/Travel/China_1_1981.jpg',
+        path_to_thumb= 'assets/images/Painting/Travel/China_1_1981-thumb.jpg',
+        alt= 'painting of a man standing and holding a telephone to his ear'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'China II',
+        path_to_image= 'assets/images/Painting/Travel/China_2.jpg',
+        path_to_thumb= 'assets/images/Painting/Travel/China_2-thumb.jpg',
+        alt= 'painting of a chinese soldier with rifle leaning against a window pane'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'China III',
+        path_to_image= 'assets/images/Painting/Travel/China_3.jpg',
+        path_to_thumb= 'assets/images/Painting/Travel/China_3-thumb.jpg',
+        alt= 'painting of a man in a conical Chinese farmers hat'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'China V',
+        path_to_image= 'assets/images/Painting/Travel/China_5.jpg',
+        path_to_thumb= 'assets/images/Painting/Travel/China_5-thumb.jpg',
+        alt= 'painting of a small boy leaning against a mural'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'China Bicycles Triptych',
+        artwork_info= '49cm x 95cm',
+        path_to_image= 'assets/images/Painting/Travel/china_bicycles_triptych_49x95.jpg',
+        path_to_thumb= 'assets/images/Painting/Travel/china_bicycles_triptych_49x95-thumb.jpg',
+        alt= 'three panel painting of cyclists on bright yellow road'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'China Work',
+        artwork_info= '46cm x 36cm',
+        path_to_image= 'assets/images/Painting/Travel/china_work_46x36.jpg',
+        path_to_thumb= 'assets/images/Painting/Travel/china_work_46x36-thumb.jpg',
+        alt= 'painting of a figure standing with a yoke over shoulders'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Walden',
+        artwork_info= '100cm x 100cm',
+        path_to_image= 'assets/images/Painting/Travel/Walden_100x100.jpg',
+        path_to_thumb= 'assets/images/Painting/Travel/Walden_100x100-thumb.jpg',
+        alt= 'painting of paradise landscape with figure fishing from shoreline'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Venice',
+        artwork_info= '1991',
+        path_to_image= 'assets/images/Painting/Travel/Venice_1991_2.jpg',
+        path_to_thumb= 'assets/images/Painting/Travel/Venice_1991_2-thumb.jpg',
+        alt= 'painting of a gondolas in Venice'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Venice',
+        artwork_info= '1991 - 55cm x 28cm',
+        path_to_image= 'assets/images/Painting/Travel/Venice_1991_55x28.jpg',
+        path_to_thumb= 'assets/images/Painting/Travel/Venice_1991_55x28-thumb.jpg',
+        alt= 'painting of Venice waterway'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Venice',
+        artwork_info= '1991',
+        path_to_image= 'assets/images/Painting/Travel/Venice_1991.jpg',
+        path_to_thumb= 'assets/images/Painting/Travel/Venice_1991-thumb.jpg',
+        alt= 'painting in three vertical panels looking down a Venice watercourse'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Hebredes Peat Bog',
+        artwork_info= '30cm x 30cm',
+        path_to_image= 'assets/images/Painting/Travel/Hebredes_Peat_Bog_30x30.jpg',
+        path_to_thumb= 'assets/images/Painting/Travel/Hebredes_Peat_Bog_30x30-thumb.jpg',
+        alt= 'murky painting of seascape'
+        ) }}
+
+      </div><!-- .row__coltouching -->
+
+    </div><!-- .row .row--pad -->
+
+  </main><!-- .travel -->
+
+{% endblock %}
+
+{% block js %}
+<!--build:js js/da.fancybox.min.js -->
+<script src="js/lib/jquery.fancybox.js"></script>
+<script src="js/daFancybox.js"></script>
+<!-- endbuild -->
+{% endblock %}
