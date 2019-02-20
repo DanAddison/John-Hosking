@@ -2,10 +2,17 @@
 
 <html lang="en">
   <head>
-    <title>John Hosking</title>
-    <meta name="description" content="Artist portfolio website">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    {# page-specific primary meta-tags #}
+    {% block meta %}{% endblock %}
+
+    <!-- page-specific Open Graph / Facebook -->
+    {% block og_meta %}{% endblock %}
+    
+    <!-- page-specific Twitter -->
+    {% block twitter_meta %}{% endblock %}
 
     <!-- essential comment for gulp to minify and put css into dist folder: -->
     <!--build:css css/styles.min.css-->
@@ -46,6 +53,8 @@
     <script src="js/lib/jquery-2.1.0.min.js"></script>
     <script src="js/daMenu.js"></script>
     <script src="js/userTabbing.js"></script>
+    <script src="js/lib/jquery.fancybox.js"></script>
+    <script src="js/daFancybox.js"></script>
     <!-- endbuild -->
 
     {% block js %}{% endblock %}
