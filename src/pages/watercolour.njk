@@ -1,0 +1,211 @@
+{% set body_id = "watercolour" %}
+{% set body_class = "gallery-page painting-childpage" %}
+{% extends "layout.njk" %}
+
+{% from "macros/_artwork-macro.njk" import artwork %}
+{% from "macros/_header-macro.njk" import title %}
+
+{% block content %}
+
+  {{ title (
+  page_title= 'Watercolour'
+  ) }}
+
+  <main class="watercolour">
+
+    <div class="row row--pad">
+
+      <div class="row__coltouching">
+
+        {{ artwork (
+        artwork_title= 'Martello Deconstructed I',
+        artwork_info= '35cm x 35cm',
+        path_to_image= 'assets/images/Painting/Watercolours/Martello_deconstructed_1_35x35.jpg',
+        path_to_thumb= 'assets/images/Painting/Watercolours/Martello_deconstructed_1_35x35-thumb.jpg',
+        alt= 'watercolour painting of curved brick Martello walls'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Martello Deconstructed II',
+        path_to_image= 'assets/images/Painting/Watercolours/Martello_deconstructed_2.jpg',
+        path_to_thumb= 'assets/images/Painting/Watercolours/Martello_deconstructed_2-thumb.jpg',
+        alt= 'watercolour painting of Martello walls in almost Cubist style'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Martello Deconstructed III',
+        path_to_image= 'assets/images/Painting/Watercolours/Martello_deconstructed_3.jpg',
+        path_to_thumb= 'assets/images/Painting/Watercolours/Martello_deconstructed_3-thumb.jpg',
+        alt= 'watercolour painting of derelict Martello brick walls'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Apple Blossom',
+        artwork_info= '33cm x 30cm',
+        path_to_image= 'assets/images/Painting/Watercolours/Apple_Blossom_33x30.jpg',
+        path_to_thumb= 'assets/images/Painting/Watercolours/Apple_Blossom_33x30-thumb.jpg',
+        alt= 'watercolour painting of a tree in pastel green shades'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Apple Tree',
+        artwork_info= '33cm x 30cm',
+        path_to_image= 'assets/images/Painting/Watercolours/Apple_Tree_33x30.jpg',
+        path_to_thumb= 'assets/images/Painting/Watercolours/Apple_Tree_33x30-thumb.jpg',
+        alt= 'watercolour painting of a small tree filling the frame'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Winter Apple Tree',
+        artwork_info= '35cm x 25cm',
+        path_to_image= 'assets/images/Painting/Watercolours/Winter_Apple_Tree_35x35.jpg',
+        path_to_thumb= 'assets/images/Painting/Watercolours/Winter_Apple_Tree_35x35-thumb.jpg',
+        alt= 'watercolour painting of small apple tree'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Charente La Forge',
+        artwork_info= '1989 - 38cm x 28cm',
+        path_to_image= 'assets/images/Painting/Watercolours/Charente_La_Forge_1989_38x28.jpg',
+        path_to_thumb= 'assets/images/Painting/Watercolours/Charente_La_Forge_1989_38x28-thumb.jpg',
+        alt= 'watercolour painting of a country lane and houses'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Cypress Tree',
+        artwork_info= '40cm x 30cm',
+        path_to_image= 'assets/images/Painting/Watercolours/Cypress_Tree_40x30.jpg',
+        path_to_thumb= 'assets/images/Painting/Watercolours/Cypress_Tree_40x30-thumb.jpg',
+        alt= 'watercolour painting looking down at countryside with farmhouse and cypresses'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'St Marks',
+        artwork_info= '25cm x 50cm',
+        path_to_image= 'assets/images/Painting/Watercolours/St_Marks_25x50.jpg',
+        path_to_thumb= 'assets/images/Painting/Watercolours/St_Marks_25x50-thumb.jpg',
+        alt= 'watercolour painting of tall tower in bright light seen from within a high dim corridor'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Shadow on the Beach',
+        artwork_info= '35cm x 35cm',
+        path_to_image= 'assets/images/Painting/Watercolours/Shadow_on_the_Beach_35x35.jpg',
+        path_to_thumb= 'assets/images/Painting/Watercolours/Shadow_on_the_Beach_35x35-thumb.jpg',
+        alt= 'watercolour painting of setting sun casting shadow of figure on Sandgate beach looking East'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Sandgate Outlet Pipe',
+        artwork_info= '35cm x 38cm',
+        path_to_image= 'assets/images/Painting/Watercolours/Sandgate_Outlet_Pipe_35x38.jpg',
+        path_to_thumb= 'assets/images/Painting/Watercolours/Sandgate_Outlet_Pipe_35x38-thumb.jpg',
+        alt= 'radiant watercolour painting of view along Sandgate beach with river outlet pipe'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Folkestone Leas Steps',
+        artwork_info= '38cm x 50cm',
+        path_to_image= 'assets/images/Painting/Watercolours/Folkestone_Leas_Steps_38x50.jpg',
+        path_to_thumb= 'assets/images/Painting/Watercolours/Folkestone_Leas_Steps_38x50-thumb.jpg',
+        alt= 'watercolour painting of view down sun-dappled steps'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Dungeness Lighthouse',
+        artwork_info= '50cm x 40cm',
+        path_to_image= 'assets/images/Painting/Watercolours/Dungeness_Lighthouse_50x40.jpg',
+        path_to_thumb= 'assets/images/Painting/Watercolours/Dungeness_Lighthouse_50x40-thumb.jpg',
+        alt= 'watercolour painting of Dungeness lighthouse with the power station behind'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Firing Range',
+        artwork_info= '33cm x 30cm',
+        path_to_image= 'assets/images/Painting/Watercolours/Firing_Range_35x25.jpg',
+        path_to_thumb= 'assets/images/Painting/Watercolours/Firing_Range_35x25-thumb.jpg',
+        alt= 'watercolour painting of firing range with martello tower in background and barbed wire fence in foreground'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Folkestone View',
+        artwork_info= '50cm x 40cm',
+        path_to_image= 'assets/images/Painting/Watercolours/Folkestone_View_50x40.jpg',
+        path_to_thumb= 'assets/images/Painting/Watercolours/Folkestone_View_50x40-thumb.jpg',
+        alt= 'watercolour painting of Folkestone vista from Saga multistorey car park'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Sandgate Beach',
+        artwork_info= '35cm x 25cm',
+        path_to_image= 'assets/images/Painting/Watercolours/Sandgate_Beach_35x25.jpg',
+        path_to_thumb= 'assets/images/Painting/Watercolours/Sandgate_Beach_35x25-thumb.jpg',
+        alt= 'watercolour painting of view up Sandgate beach to houses behind'
+        ) }}
+        
+        {{ artwork (
+        artwork_title= 'Sandgate Beach Cross',
+        artwork_info= '15cm x 25cm',
+        path_to_image= 'assets/images/Painting/Watercolours/Sandgate_Beach_Cross_15x25.jpg',
+        path_to_thumb= 'assets/images/Painting/Watercolours/Sandgate_Beach_Cross_15x25-thumb.jpg',
+        alt= 'watercolour painting of view along Sandgate beach with blue cross painted on rock in foreground'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Sandgate High Street',
+        artwork_info= '48cm x 30cm',
+        path_to_image= 'assets/images/Painting/Watercolours/Sandgate_High_Street_48x30.jpg',
+        path_to_thumb= 'assets/images/Painting/Watercolours/Sandgate_High_Street_48x30-thumb.jpg',
+        alt= 'watercolour painting of the view up Sandgate High St'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'The Leas',
+        artwork_info= '35cm x 25cm',
+        path_to_image= 'assets/images/Painting/Watercolours/The_Leas_35x25.jpg',
+        path_to_thumb= 'assets/images/Painting/Watercolours/The_Leas_35x25-thumb.jpg',
+        alt= 'watercolour painting of view up Sandgate beach to houses behind'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'The Water Tower',
+        artwork_info= '32cm x 56cm',
+        path_to_image= 'assets/images/Painting/Watercolours/The_Water_Tower_32x56.jpg',
+        path_to_thumb= 'assets/images/Painting/Watercolours/The_Water_Tower_32x56-thumb.jpg',
+        alt= 'watercolour painting of red brick water tower structure at Littlestone'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Viaduct Folkestone',
+        artwork_info= '40cm x 50cm',
+        path_to_image= 'assets/images/Painting/Watercolours/Viaduct_Folkestone_40x50.jpg',
+        path_to_thumb= 'assets/images/Painting/Watercolours/Viaduct_Folkestone_40x50-thumb.jpg',
+        alt= 'watercolour painting of view down a street that passes below Folkestone brick viaduct'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Rosemary with Sophie',
+        artwork_info= '1987',
+        path_to_image= 'assets/images/Painting/Watercolours/Rosemary_with_Sophie_1987.jpg',
+        path_to_thumb= 'assets/images/Painting/Watercolours/Rosemary_with_Sophie_1987-thumb.jpg',
+        alt= 'watercolour painting of woman breast feeding baby'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Rainbow',
+        artwork_info= '1979 - 35cm x 24cm',
+        path_to_image= 'assets/images/Painting/Watercolours/Rainbow_1979_35x24.jpg',
+        path_to_thumb= 'assets/images/Painting/Watercolours/Rainbow_1979_35x24-thumb.jpg',
+        alt= 'watercolour painting of rainbow meeting sea with graphic multicoloured border'
+        ) }}
+
+      </div><!-- .row__coltouching -->
+
+    </div><!-- .row .row--pad -->
+
+  </main><!-- .watercolour -->
+
+{% endblock %}
+
+{% block js %}
+{% endblock %}
