@@ -38,10 +38,13 @@
       width: 500px;
       max-width: 100%;
     }
-  
-    p {
-      margin-top: $spacing;
-    }
+  }
+}
+
+.contact-form {
+
+  textarea {
+    height: 10em;
   }
 }
 

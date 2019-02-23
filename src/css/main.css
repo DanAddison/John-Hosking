@@ -1073,8 +1073,9 @@ body#contact .nav-contact a {
     .contact .estate img {
       width: 500px;
       max-width: 100%; }
-    .contact .estate p {
-      margin-top: 2em; }
+
+.contact-form textarea {
+  height: 10em; }
 
 .contact-form {
   float: left;
