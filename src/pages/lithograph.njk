@@ -1,0 +1,83 @@
+{% set body_id = "lithograph" %}
+{% set body_class = "gallery-page painting-childpage" %}
+{% extends "layout.njk" %}
+
+{% from "macros/_artwork-macro.njk" import artwork %}
+{% from "macros/_header-macro.njk" import title %}
+
+{% block content %}
+
+  {{ title (
+  page_title= 'Lithograph'
+  ) }}
+
+  <main class="lithograph">
+
+    <div class="row row--pad">
+
+      <div class="row__coltouching">
+
+        {{ artwork (
+        artwork_title= 'Deconstructed Martello',
+        artwork_info= '44cm x 55cm',
+        path_to_image= 'assets/images/Printmaking/Lithographs/Deconstructed_Martello_44x55.jpg',
+        path_to_thumb= 'assets/images/Printmaking/Lithographs/Deconstructed_Martello_44x55-thumb.jpg',
+        alt= 'colourful lithograph of a fragmented Martello Tower'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Leas Martello',
+        artwork_info= '44cm x 55cm',
+        path_to_image= 'assets/images/Printmaking/Lithographs/Leas_Martello_44x55.jpg',
+        path_to_thumb= 'assets/images/Printmaking/Lithographs/Leas_Martello_44x55-thumb.jpg',
+        alt= 'colourful lithograph of a Martello Tower behind foliage'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Martello 2',
+        artwork_info= '44cm x 55cm',
+        path_to_image= 'assets/images/Printmaking/Lithographs/Martello_2_44x55.jpg',
+        path_to_thumb= 'assets/images/Printmaking/Lithographs/Martello_2_44x55-thumb.jpg',
+        alt= 'colourful lithograph of a Martello Tower behind foliage and fence'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Martello 8',
+        artwork_info= '44cm x 55cm',
+        path_to_image= 'assets/images/Printmaking/Lithographs/Martello_8_44x55.jpg',
+        path_to_thumb= 'assets/images/Printmaking/Lithographs/Martello_8_44x55-thumb.jpg',
+        alt= 'lithograph of a Martello Tower with purple sky backdrop'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'Martello 13',
+        artwork_info= '44cm x 55cm',
+        path_to_image= 'assets/images/Printmaking/Lithographs/Martello_13_44x55.jpg',
+        path_to_thumb= 'assets/images/Printmaking/Lithographs/Martello_13_44x55-thumb.jpg',
+        alt= 'lithograph of a Martello Tower'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'The Folly and Communication System with Water Tower',
+        path_to_image= 'assets/images/Printmaking/Lithographs/The_Folly_and_communication_system_with_water_tower.jpg',
+        path_to_thumb= 'assets/images/Printmaking/Lithographs/The_Folly_and_communication_system_with_water_tower-thumb.jpg',
+        alt= 'study of Kent coastal sound mirrors and water tower'
+        ) }}
+
+        {{ artwork (
+        artwork_title= 'The Wave',
+        path_to_image= 'assets/images/Printmaking/Lithographs/The_Wave.jpg',
+        path_to_thumb= 'assets/images/Printmaking/Lithographs/The_Wave-thumb.jpg',
+        alt= 'blue and white lithograph of a wave similar to Hokusai'
+        ) }}
+        
+      </div><!-- .row__coltouching -->
+
+    </div><!-- .row .row--pad -->
+
+  </main><!-- .lithograph -->
+
+{% endblock %}
+
+{% block js %}
+{% endblock %}
