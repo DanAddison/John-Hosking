@@ -1,4 +1,11 @@
 {% set body_id = "contact" %}
+
+{% block meta %}
+    <title>John Hosking | Contact - John's family are happy to take enquiries about his work</title>
+    <meta name="title" content="John Hosking | Contact - John's family are happy to take enquiries about his work">
+    <meta name="description" content="John's family are happy to hear from you if you have any enquiries about his work. Go ahead and send us a message!">
+{% endblock %}
+
 {% extends "layout.njk" %}
 
 {% from "macros/_header-macro.njk" import title %}
@@ -14,7 +21,7 @@
     <div class="row row--pad">
 
       <div class="estate">
-        <img src="assets/images/Hoskings.jpg" alt="">
+        {# <img src="assets/images/Hoskings.jpg" alt=""> #}
         <p>John's family are happy to hear from you if you have any enquiries about his work.<br>Go ahead and send us a message:</p>
       </div>
 

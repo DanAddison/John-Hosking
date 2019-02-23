@@ -1,5 +1,12 @@
 {% set body_id = "etching" %}
 {% set body_class = "gallery-page painting-childpage" %}
+
+{% block meta %}
+    <title>John Hosking | Etching & Mezzotint - print work by Kent artist John Hosking</title>
+    <meta name="title" content="John Hosking | Etching - print work by Kent artist John Hosking">
+    <meta name="description" content="This is a selection of images of John's etching and mezzotint work">
+{% endblock %}
+
 {% extends "layout.njk" %}
 
 {% from "macros/_artwork-macro.njk" import artwork %}

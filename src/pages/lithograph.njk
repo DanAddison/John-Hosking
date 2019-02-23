@@ -1,5 +1,12 @@
 {% set body_id = "lithograph" %}
 {% set body_class = "gallery-page painting-childpage" %}
+
+{% block meta %}
+    <title>John Hosking | Lithograph - prints by artist John Hosking</title>
+    <meta name="title" content="John Hosking | Lithograph - prints by artist John Hosking">
+    <meta name="description" content="This is a selection of lithograph prints of Kent's coastal Martello Towers">
+{% endblock %}
+
 {% extends "layout.njk" %}
 
 {% from "macros/_artwork-macro.njk" import artwork %}

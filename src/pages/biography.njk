@@ -1,4 +1,11 @@
 {% set body_id = "biography" %}
+
+{% block meta %}
+    <title>John Hosking | Biography - an archive of exhibitions featuring work by John Hosking</title>
+    <meta name="title" content="John Hosking | Biography - an archive of exhibitions featuring work by John Hosking">
+    <meta name="description" content="John Hosking was born in 1952, he studied at Epsom School of Art and at Canterbury KIAD, his work is in private and public collections across the UK.">
+{% endblock %}
+
 {% extends "layout.njk" %}
 
 {% from "macros/_biography-macro.njk" import biography %}

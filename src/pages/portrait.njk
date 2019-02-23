@@ -1,5 +1,12 @@
 {% set body_id = "portrait" %}
 {% set body_class = "gallery-page painting-childpage" %}
+
+{% block meta %}
+    <title>John Hosking | Portraits - paintings of the artist, friends and family</title>
+    <meta name="title" content="John Hosking | Portraits - paintings of the artist, friends and family">
+    <meta name="description" content="This is a selection of portrait paintings by artist John Hosking">
+{% endblock %}
+
 {% extends "layout.njk" %}
 
 {% from "macros/_artwork-macro.njk" import artwork %}

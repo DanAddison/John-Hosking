@@ -1,5 +1,12 @@
 {% set body_id = "misc" %}
 {% set body_class = "gallery-page painting-childpage" %}
+
+{% block meta %}
+    <title>John Hosking | Misc - selection of disparate paintings</title>
+    <meta name="title" content="John Hosking | Misc - selection of disparate paintings">
+    <meta name="description" content="This is a selection of work in different styles, in different mediums, with varying subject matter, spanning many decades">
+{% endblock %}
+
 {% extends "layout.njk" %}
 
 {% from "macros/_artwork-macro.njk" import artwork %}

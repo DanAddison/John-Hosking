@@ -1,5 +1,12 @@
 {% set body_id = "folkestone" %}
 {% set body_class = "gallery-page painting-childpage" %}
+
+{% block meta %}
+    <title>John Hosking | Folkestone - paintings featuring Folkestone, Kent</title>
+    <meta name="title" content="John Hosking | Folkestone - paintings featuring Folkestone, Kent">
+    <meta name="description" content="This is a selection of John's paintings which feature his home town of Folkestone, Kent">
+{% endblock %}
+
 {% extends "layout.njk" %}
 
 {% from "macros/_artwork-macro.njk" import artwork %}

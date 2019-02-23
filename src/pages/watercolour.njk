@@ -1,5 +1,12 @@
 {% set body_id = "watercolour" %}
 {% set body_class = "gallery-page painting-childpage" %}
+
+{% block meta %}
+    <title>John Hosking | Watercolour - paintings by John Hosking</title>
+    <meta name="title" content="John Hosking | Watercolour - paintings by John Hosking">
+    <meta name="description" content="This is a selection of watercolour paintings by John Hosking prominently featuring Folkestone and Sandgate">
+{% endblock %}
+
 {% extends "layout.njk" %}
 
 {% from "macros/_artwork-macro.njk" import artwork %}

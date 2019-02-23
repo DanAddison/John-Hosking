@@ -1,5 +1,12 @@
 {% set body_id = "linocut" %}
 {% set body_class = "gallery-page painting-childpage" %}
+
+{% block meta %}
+    <title>John Hosking | Linocut - prints by artist John Hosking</title>
+    <meta name="title" content="John Hosking | Linocut - prints by artist John Hosking">
+    <meta name="description" content="This is a selection of linocut prints, including a series of churches in the Romney Marsh area">
+{% endblock %}
+
 {% extends "layout.njk" %}
 
 {% from "macros/_artwork-macro.njk" import artwork %}

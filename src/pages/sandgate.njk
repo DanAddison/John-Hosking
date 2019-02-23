@@ -1,5 +1,12 @@
 {% set body_id = "sandgate" %}
 {% set body_class = "gallery-page painting-childpage" %}
+
+{% block meta %}
+    <title>John Hosking | Sandgate - paintings of the artist's home town</title>
+    <meta name="title" content="John Hosking | Sandgate - paintings of the artist's home town">
+    <meta name="description" content="This is a selection of paintings of Sandgate, a small beachside village in Kent">
+{% endblock %}
+
 {% extends "layout.njk" %}
 
 {% from "macros/_artwork-macro.njk" import artwork %}

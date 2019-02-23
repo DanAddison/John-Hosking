@@ -1,5 +1,12 @@
 {% set body_id = "monoprint" %}
 {% set body_class = "gallery-page painting-childpage" %}
+
+{% block meta %}
+    <title>John Hosking | Monoprint - prints by artist John Hosking</title>
+    <meta name="title" content="John Hosking | Monoprint - prints by artist John Hosking">
+    <meta name="description" content="This is a selection of colourful monoprints, prominently featuring Martello Towers">
+{% endblock %}
+
 {% extends "layout.njk" %}
 
 {% from "macros/_artwork-macro.njk" import artwork %}

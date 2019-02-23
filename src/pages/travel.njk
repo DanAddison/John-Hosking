@@ -1,5 +1,12 @@
 {% set body_id = "travel" %}
 {% set body_class = "gallery-page painting-childpage" %}
+
+{% block meta %}
+    <title>John Hosking | Travel - paintings from travels overseas</title>
+    <meta name="title" content="John Hosking | Travel - paintings from travels overseas">
+    <meta name="description" content="This is a selection of paintings from trips beyond the UK and France, including Venice, China and Cuba">
+{% endblock %}
+
 {% extends "layout.njk" %}
 
 {% from "macros/_artwork-macro.njk" import artwork %}

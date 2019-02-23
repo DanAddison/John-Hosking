@@ -1,5 +1,12 @@
 {% set body_id = "martello" %}
 {% set body_class = "gallery-page painting-childpage" %}
+
+{% block meta %}
+    <title>John Hosking | Martello - paintings of Kent's Martello Towers</title>
+    <meta name="title" content="John Hosking | Martello - paintings of Kent's Martello Towers">
+    <meta name="description" content="This is a selection of paintings of Martello Towers, Kent's coastal defense structures">
+{% endblock %}
+
 {% extends "layout.njk" %}
 
 {% from "macros/_artwork-macro.njk" import artwork %}

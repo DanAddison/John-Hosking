@@ -1,5 +1,12 @@
 {% set body_id = "murals" %}
 {% set body_class = "gallery-page painting-childpage" %}
+
+{% block meta %}
+    <title>John Hosking | Murals - large scale commissioned wall murals</title>
+    <meta name="title" content="John Hosking | Murals - large scale commissioned wall murals">
+    <meta name="description" content="This is a selection of local public work undertaken by commission by artist John Hosking">
+{% endblock %}
+
 {% extends "layout.njk" %}
 
 {% from "macros/_artwork-macro.njk" import artwork %}

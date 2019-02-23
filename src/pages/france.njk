@@ -1,5 +1,12 @@
 {% set body_id = "france" %}
 {% set body_class = "gallery-page painting-childpage" %}
+
+{% block meta %}
+    <title>John Hosking | South of France - paintings of the area where the Hoskings spent many summers</title>
+    <meta name="title" content="John Hosking | South of France - paintings of the area where the Hoskings spent many summers">
+    <meta name="description" content="This is a selection of paintings featuring the South of France, where the artist spent many summers with his family">
+{% endblock %}
+
 {% extends "layout.njk" %}
 
 {% from "macros/_artwork-macro.njk" import artwork %}

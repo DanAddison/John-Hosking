@@ -1,5 +1,12 @@
 {% set body_id = "allotment" %}
 {% set body_class = "gallery-page painting-childpage" %}
+
+{% block meta %}
+    <title>John Hosking | Allotment - paintings by John Hosking</title>
+    <meta name="title" content="John Hosking | Allotment - paintings by John Hosking">
+    <meta name="description" content="A collection of paintings by John Hosking depicting his beloved Sandgate allotment">
+{% endblock %}
+
 {% extends "layout.njk" %}
 
 {% from "macros/_artwork-macro.njk" import artwork %}

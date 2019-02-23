@@ -1,5 +1,12 @@
 {% set body_id = "kent" %}
 {% set body_class = "gallery-page painting-childpage" %}
+
+{% block meta %}
+    <title>John Hosking | Kent - paintings of the artist's home county</title>
+    <meta name="title" content="John Hosking | Kent - paintings of the artist's home county">
+    <meta name="description" content="This is a selection of paintings featuring parts of Kent beyond Folkestone and Sandgate">
+{% endblock %}
+
 {% extends "layout.njk" %}
 
 {% from "macros/_artwork-macro.njk" import artwork %}
