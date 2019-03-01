@@ -16,7 +16,8 @@
       margin-right: $spacing*2;
     }
 
-    .page__title {
+    .page__header .page__title,
+    .page__header .birth-death {
       display: none;
     }
   }

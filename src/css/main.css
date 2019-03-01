@@ -947,7 +947,7 @@ iframe {
 
 .sidenav nav ul {
   list-style: none;
-  margin-top: 5em;
+  margin-top: 4em;
   padding: 0; }
 
 .sidenav nav li {
@@ -975,6 +975,7 @@ iframe {
 body#painting .nav-painting a,
 body.painting-childpage .nav-painting > a,
 body#printmaking .nav-printmaking a,
+body.printmaking-childpage .nav-printmaking > a,
 body#biography .nav-bio a,
 body#contact .nav-contact a {
   color: #02aa78; }
@@ -1021,7 +1022,8 @@ body#contact .nav-contact a {
   #home main.welcome .row {
     max-width: 1900px;
     margin-right: 4em; }
-  #home .page__title {
+  #home .page__header .page__title,
+  #home .page__header .birth-death {
     display: none; } }
 
 @media screen and (min-width: 900px) {

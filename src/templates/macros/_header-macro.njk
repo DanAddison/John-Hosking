@@ -7,3 +7,14 @@
 </header>
 
 {% endmacro %}
+
+{% macro home_title (page_title, birth_death) %}
+
+<header class="page__header"> 
+
+  <h1 class="page__title">{{ page_title }}</h1>
+  <p class="birth-death">{{ birth_death }}</p>
+
+</header>
+
+{% endmacro %}

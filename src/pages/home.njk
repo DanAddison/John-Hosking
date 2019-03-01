@@ -8,12 +8,13 @@
 
 {% extends "layout.njk" %}
 
-{% from "macros/_header-macro.njk" import title %}
+{% from "macros/_header-macro.njk" import home_title %}
 
 {% block content %}
 
-  {{ title (
-  page_title= 'John Hosking'
+  {{ home_title (
+  page_title= 'John Hosking',
+  birth_death= '1952 - 2018'
   ) }}
 
   <main class="welcome">
