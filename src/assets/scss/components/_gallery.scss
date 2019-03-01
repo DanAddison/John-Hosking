@@ -4,8 +4,26 @@
     position: relative;
     width: 100%;
     padding-bottom: 100%;
-    // margin-bottom: $spacing;
     margin-bottom: 0;
+
+    a {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+
+      &:hover,
+      &:focus {
+       
+        figcaption {
+          opacity: 1;
+        }
+
+        img {
+          filter: brightness(40%);
+        }
+      }
+    }
     
     .image__info {
       display: none;
@@ -22,16 +40,7 @@
       z-index: 10;
       opacity: 0;
       transition: .4s ease-out;
-
-      &:hover,
-      &:focus {
-       opacity: 1;
-      }
     } 
-  }
-
-  figure:hover figcaption {
-    opacity: 1;
   }
 
   img {
@@ -40,14 +49,5 @@
     width: 100%;
     object-fit: cover;
     transition: .2s ease-out;
-    
-    &:hover,
-    &:focus {
-      filter: brightness(40%);
-    }
-  }
-  
-  figcaption:hover ~ img {
-    filter: brightness(40%);
   }
 }

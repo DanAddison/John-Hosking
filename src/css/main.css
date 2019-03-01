@@ -1100,6 +1100,15 @@ body#contact .nav-contact a {
   width: 100%;
   padding-bottom: 100%;
   margin-bottom: 0; }
+  .gallery-page figure a {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+    .gallery-page figure a:hover figcaption, .gallery-page figure a:focus figcaption {
+      opacity: 1; }
+    .gallery-page figure a:hover img, .gallery-page figure a:focus img {
+      filter: brightness(40%); }
   .gallery-page figure .image__info {
     display: none; }
   .gallery-page figure figcaption {
@@ -1113,11 +1122,6 @@ body#contact .nav-contact a {
     z-index: 10;
     opacity: 0;
     transition: .4s ease-out; }
-    .gallery-page figure figcaption:hover, .gallery-page figure figcaption:focus {
-      opacity: 1; }
-
-.gallery-page figure:hover figcaption {
-  opacity: 1; }
 
 .gallery-page img {
   position: absolute;
@@ -1125,11 +1129,6 @@ body#contact .nav-contact a {
   width: 100%;
   object-fit: cover;
   transition: .2s ease-out; }
-  .gallery-page img:hover, .gallery-page img:focus {
-    filter: brightness(40%); }
-
-.gallery-page figcaption:hover ~ img {
-  filter: brightness(40%); }
 
 .social-icons i {
   padding: .5em;
