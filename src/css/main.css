@@ -926,13 +926,13 @@ iframe {
   width: 300px;
   padding: 1.5em 1em 2em 2em;
   position: fixed;
-  overflow: scroll;
+  overflow-y: auto;
   top: 0;
   left: 0;
   height: 100%;
   background-color: #edfaf2;
   margin-left: -300px;
-  transition: .3s ease-in; }
+  transition: 0.3s ease-in; }
   .sidenav.menushow {
     margin-left: 0; }
   @media screen and (min-width: 1600px) {
@@ -951,7 +951,7 @@ iframe {
   padding: 0; }
 
 .sidenav nav li {
-  padding: .1em 0em; }
+  padding: 0.1em 0em; }
 
 .sidenav nav a {
   color: #222;
@@ -981,9 +981,9 @@ body#contact .nav-contact a {
   color: #02aa78; }
 
 .credits {
-  font-size: .9em; }
+  font-size: 0.9em; }
   .credits .copyright {
-    margin-bottom: .25em; }
+    margin-bottom: 0.25em; }
   .credits a {
     color: #02aa78;
     text-decoration: none; }
